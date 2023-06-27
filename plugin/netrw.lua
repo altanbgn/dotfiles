@@ -9,7 +9,6 @@ vim.opt.termguicolors = true
 -- mappings
 vim.keymap.set("n", "<leader>pv", ":NvimTreeFocus<CR>")
 
--- setup
 require("nvim-tree").setup()
 require("nvim-tree").setup({
   sort_by = "case_sensitive",
