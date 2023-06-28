@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "/Users/altanbagana/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["blamer.nvim"] = {
-    loaded = true,
-    path = "/Users/altanbagana/.local/share/nvim/site/pack/packer/start/blamer.nvim",
-    url = "https://github.com/APZelos/blamer.nvim"
-  },
   ["cellular-automaton.nvim"] = {
     loaded = true,
     path = "/Users/altanbagana/.local/share/nvim/site/pack/packer/start/cellular-automaton.nvim",
@@ -199,11 +194,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/altanbagana/.local/share/nvim/site/pack/packer/start/rose-pine",
     url = "https://github.com/rose-pine/neovim"
-  },
-  ["telescope-env.nvim"] = {
-    loaded = true,
-    path = "/Users/altanbagana/.local/share/nvim/site/pack/packer/start/telescope-env.nvim",
-    url = "https://github.com/LinArcX/telescope-env.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
