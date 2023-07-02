@@ -11,21 +11,24 @@ return require('packer').startup(function(use)
     'nvim-telescope/telescope.nvim', tag = '0.1.0',
     -- or                            , branch = '0.1.x',
     requires = { {'nvim-lua/plenary.nvim'} }
-
   }
 
+  use 'lukas-reineke/indent-blankline.nvim'
+
   use({
-    'rose-pine/neovim',
-    as = 'rose-pine',
+    'folke/tokyonight.nvim',
+    lazy = false,
+    priority = 1000,
+    opts = {},
     config = function()
-      vim.cmd('colorscheme rose-pine')
+      vim.cmd("colorscheme tokyonight-night")
     end
   })
 
   use({
-    "folke/trouble.nvim",
+    'folke/trouble.nvim',
     config = function()
-      require("trouble").setup {
+      require('trouble').setup {
         icons = false,
         -- your configuration comes here
         -- or leave it empty to use the default settings
@@ -41,12 +44,12 @@ return require('packer').startup(function(use)
       ts_update()
     end
   }
-  use("nvim-treesitter/playground")
-  use("theprimeagen/harpoon")
-  use("theprimeagen/refactoring.nvim")
-  use("mbbill/undotree")
-  use("tpope/vim-fugitive")
-  use("nvim-treesitter/nvim-treesitter-context");
+  use('nvim-treesitter/playground')
+  use('theprimeagen/harpoon')
+  use('theprimeagen/refactoring.nvim')
+  use('mbbill/undotree')
+  use('tpope/vim-fugitive')
+  use('nvim-treesitter/nvim-treesitter-context');
 
   use {
     'VonHeikemen/lsp-zero.nvim',
@@ -71,12 +74,17 @@ return require('packer').startup(function(use)
     }
   }
 
-  use("folke/zen-mode.nvim")
-  use("github/copilot.vim")
-  use("eandrju/cellular-automaton.nvim")
+  use('folke/zen-mode.nvim')
+  use('github/copilot.vim')
+  use('eandrju/cellular-automaton.nvim')
 
   use {
-    "nvim-tree/nvim-tree.lua",
-    "nvim-tree/nvim-web-devicons",
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v2.x",
+    requires = {
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+      "MunifTanjim/nui.nvim",
+    }
   }
 end)
