@@ -1,3 +1,5 @@
+vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
+
 -- If you want icons for diagnostic errors, you'll need to define them somewhere:
 vim.fn.sign_define("DiagnosticSignError",
   {text = " ", texthl = "DiagnosticSignError"})
@@ -144,9 +146,9 @@ require("neo-tree").setup({
   filesystem = {
     filtered_items = {
       visible = false, -- when true, they will just be displayed differently than normal items
-      hide_dotfiles = false,
+      hide_dotfiles = true,
       hide_gitignored = true,
-      hide_hidden = true, -- only works on Windows for hidden files/directories
+      hide_hidden = false, -- only works on Windows for hidden files/directories
       hide_by_name = {
         --"node_modules"
       },
@@ -165,7 +167,7 @@ require("neo-tree").setup({
         --".null-ls_*",
       },
     },
-    follow_current_file = false, -- This will find and focus the file in the active buffer every
+    follow_current_file = true, -- This will find and focus the file in the active buffer every
     -- time the current file is changed while the tree is open.
     group_empty_dirs = false, -- when true, empty folders will be grouped together
     hijack_netrw_behavior = "open_default", -- netrw disabled, opening a directory opens neo-tree
