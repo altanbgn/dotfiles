@@ -45,6 +45,10 @@ require("neo-tree").setup({
       expander_expanded = "",
       expander_highlight = "NeoTreeExpander",
     },
+    view = {
+      relativenumber = true,
+      number = true,
+    },
     icon = {
       folder_closed = "",
       folder_open = "",

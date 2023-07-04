@@ -15,15 +15,7 @@ return require('packer').startup(function(use)
 
   use 'lukas-reineke/indent-blankline.nvim'
 
-  use({
-    'folke/tokyonight.nvim',
-    lazy = false,
-    priority = 1000,
-    opts = {},
-    config = function()
-      vim.cmd("colorscheme tokyonight-night")
-    end
-  })
+  use 'rebelot/kanagawa.nvim'
 
   use({
     'folke/trouble.nvim',
