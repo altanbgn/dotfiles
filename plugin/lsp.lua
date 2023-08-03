@@ -4,6 +4,8 @@ lsp.preset("recommended")
 
 lsp.ensure_installed({
   "tsserver",
+  "clangd",
+  "cmake",
   "prismals",
   "tailwindcss",
   "gopls",
@@ -11,7 +13,8 @@ lsp.ensure_installed({
   "svelte",
   "graphql",
   "lua_ls",
-  "golangci_lint_ls"
+  "golangci_lint_ls",
+  "pylsp"
 })
 
 -- Fix Undefined global "vim"

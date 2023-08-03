@@ -14,7 +14,9 @@ return require("packer").startup(function(use)
   }
 
   use "lukas-reineke/indent-blankline.nvim"
-  use "rebelot/kanagawa.nvim"
+
+  -- THEME!
+  use "ellisonleao/gruvbox.nvim"
 
   use({
     "folke/trouble.nvim",
