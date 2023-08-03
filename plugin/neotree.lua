@@ -8,11 +8,15 @@ vim.fn.sign_define("DiagnosticSignWarn",
 vim.fn.sign_define("DiagnosticSignInfo",
   {text = " ", texthl = "DiagnosticSignInfo"})
 vim.fn.sign_define("DiagnosticSignHint",
-  {text = "", texthl = "DiagnosticSignHint"})
+  {text = " ", texthl = "DiagnosticSignHint"})
 -- NOTE: this is changed from v1.x, which used the old style of highlight groups
 -- in the form "LspDiagnosticsSignWarning"
 
 require("neo-tree").setup({
+  source_selector = {
+    winbar = true,
+    statusline = true
+  },
   close_if_last_window = false, -- Close Neo-tree if it is the last window left in the tab
   popup_border_style = "rounded",
   enable_git_status = true,
@@ -24,7 +28,7 @@ require("neo-tree").setup({
   --       if a.type == b.type then
   --           return a.path > b.path
   --       else
-  --           return a.type > b.type
+  --          return a.type > b.type
   --       end
   --   end , -- this sorts files and directories descendantly
   default_component_configs = {
@@ -66,8 +70,8 @@ require("neo-tree").setup({
     git_status = {
       symbols = {
         -- Change type
-        added     = "", -- or "✚", but this is redundant info if you use git_status_colors on the name
-        modified  = "", -- or "", but this is redundant info if you use git_status_colors on the name
+        added     = "✚", -- or "✚", but this is redundant info if you use git_status_colors on the name
+        modified  = "", -- or "", but this is redundant info if you use git_status_colors on the name
         deleted   = "✖",-- this can only be used in the git_status source
         renamed   = "",-- this can only be used in the git_status source
         -- Status type
@@ -175,7 +179,7 @@ require("neo-tree").setup({
     -- "open_current",  -- netrw disabled, opening a directory opens within the
     -- window like netrw would, regardless of window.position
     -- "disabled",    -- netrw left alone, neo-tree does not handle opening dirs
-    use_libuv_file_watcher = false, -- This will use the OS level file watchers to detect changes
+    use_libuv_file_watcher = true, -- This will use the OS level file watchers to detect changes
     -- instead of relying on nvim autocmd events.
     window = {
       mappings = {

@@ -31,6 +31,13 @@ return require("packer").startup(function(use)
   })
 
   use {
+    'numToStr/Comment.nvim',
+    config = function ()
+      require("Comment").setup()
+    end
+  }
+
+  use {
     "nvim-treesitter/nvim-treesitter",
     run = function()
       local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
