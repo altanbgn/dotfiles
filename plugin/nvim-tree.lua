@@ -11,15 +11,6 @@ require("nvim-tree").setup({
   view = {
     adaptive_size = false,
     width = 40,
-    float = {
-      enable = true,
-      open_win_config = {
-        relative = "editor",
-        border = "rounded",
-        width = 60,
-        height = 40,
-      }
-    }
   },
   renderer = {
     full_name = true,
