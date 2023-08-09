@@ -16,52 +16,33 @@ return require("packer").startup(function(use)
   use("github/copilot.vim")
   use("eandrju/cellular-automaton.nvim")
 
-  -- THEME!
+  -- Colorscheme
   use("ellisonleao/gruvbox.nvim")
 
-  use {
-    "nvim-tree/nvim-tree.lua",
-    requires = {
-      "nvim-tree/nvim-web-devicons",
-      "nvim-lua/plenary.nvim",
-      "antosha417/nvim-lsp-file-operations"
-    }
-  }
+  -- Dependant
+  use("nvim-lua/plenary.nvim")
 
-  use {
-    "nvim-telescope/telescope.nvim", tag = "0.1.0",
-    -- or                            , branch = "0.1.x",
-    requires = { { "nvim-lua/plenary.nvim" } }
-  }
+  -- Utility
+  use("nvim-tree/nvim-web-devicons")
+  use({"nvim-telescope/telescope.nvim", tag = "0.1.2"})
+  use("folke/trouble.nvim")
+  use("numToStr/Comment.nvim")
 
   use({
-    "folke/trouble.nvim",
-    config = function()
-      require("trouble").setup {
-        icons = false,
-        -- your configuration comes here
-        -- or leave it empty to use the default settings
-        -- refer to the configuration section below
-      }
+    "nvim-tree/nvim-tree.lua",
+    requires = {
+      "antosha417/nvim-lsp-file-operations"
+    }
+  })
+
+  use({
+    "nvim-treesitter/nvim-treesitter",
+    run = function()
+      require("nvim-treesitter.install").update({ with_sync = true })
     end
   })
 
-  use {
-    'numToStr/Comment.nvim',
-    config = function()
-      require("Comment").setup()
-    end
-  }
-
-  use {
-    "nvim-treesitter/nvim-treesitter",
-    run = function()
-      local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
-      ts_update()
-    end
-  }
-
-  use {
+  use({
     "VonHeikemen/lsp-zero.nvim",
     branch = "v1.x",
     requires = {
@@ -82,5 +63,5 @@ return require("packer").startup(function(use)
       { "L3MON4D3/LuaSnip" },
       { "rafamadriz/friendly-snippets" },
     }
-  }
+  })
 end)

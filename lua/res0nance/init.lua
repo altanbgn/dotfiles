@@ -1,5 +1,5 @@
-require("res0nance.set")
-require("res0nance.remap")
+require("res0nance.settings")
+require("res0nance.keybinds")
 
 local augroup = vim.api.nvim_create_augroup
 local res0nanceGroup = augroup("res0nance", {})
