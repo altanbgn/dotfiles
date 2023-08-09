@@ -14,11 +14,11 @@ autocmd("BufWinEnter", {
     local currentBuffer = vim.api.nvim_get_current_buf()
     local opts = { buffer = currentBuffer, remap = false }
 
-    vim.keymap.set("n", "<leader>p", function()
+    vim.keymap.set("n", "<leader>ps", function()
       vim.cmd.Git("push")
     end, opts)
 
-    vim.keymap.set("n", "<leader>P", function()
+    vim.keymap.set("n", "<leader>pl", function()
       vim.cmd.Git({ "pull", "--rebase" })
     end, opts)
 
