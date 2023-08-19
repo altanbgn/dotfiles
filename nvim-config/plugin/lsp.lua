@@ -1,7 +1,6 @@
 local lsp = require("lsp-zero")
 
 lsp.preset("recommended")
-
 lsp.ensure_installed({
   "tsserver",
   "clangd",
@@ -46,7 +45,7 @@ lsp.set_preferences({
   }
 })
 
-lsp.on_attach(function(client, currentBuffer)
+lsp.on_attach(function(_, currentBuffer)
   local opts = { buffer = currentBuffer, remap = false }
 
   vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
