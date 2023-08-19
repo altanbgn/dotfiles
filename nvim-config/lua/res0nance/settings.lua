@@ -1,4 +1,4 @@
-vim.api.nvim_set_option("clipboard", "unnamed")
+vim.api.nvim_set_option("clipboard", "unnamedplus")
 vim.opt.cursorline = true
 
 vim.opt.number = true
@@ -16,6 +16,7 @@ vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.undodir = vim.fn.stdpath("config") .. "/undodir"
 vim.opt.undofile = true
+vim.opt.mouse = ""
 
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
