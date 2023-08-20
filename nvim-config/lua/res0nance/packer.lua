@@ -26,7 +26,9 @@ return require("packer").startup(function(use)
   use("nvim-tree/nvim-web-devicons")
   use({"nvim-telescope/telescope.nvim", tag = "0.1.2"})
   use("folke/trouble.nvim")
-  use("numToStr/Comment.nvim")
+  use({"numToStr/Comment.nvim", config = function()
+    require("Comment").setup()
+  end})
 
   use({
     "nvim-tree/nvim-tree.lua",
