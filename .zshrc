@@ -85,6 +85,8 @@ bindkey -s ^f "~/.scripts/tmux-sessionizer"
 # If there is no tmux, create one XD
 if [ "$TMUX" = "" ]; then tmux new -s res0nance; else tmux attach; fi
 
+alias tmux-sessionizer="~/.scripts/tmux-sessionizer"
+
 # Git aliases
 alias gs="git status"
 alias gpl="git pull"
