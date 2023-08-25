@@ -90,7 +90,7 @@ alias tmux-sessionizer="~/.scripts/tmux-sessionizer"
 # Git aliases
 alias gs="git status"
 alias gpl="git pull"
-alias psh="git push"
+alias gpsh="git push"
 alias gd="git diff"
 alias g+="git add ."
 
