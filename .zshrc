@@ -83,7 +83,9 @@ bindkey -v
 bindkey -s ^f "~/.scripts/tmux-sessionizer"
 
 # If there is no tmux, create one XD
-if [ "$TMUX" = "" ]; then tmux new -s res0nance; else tmux attach; fi
+if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+  tmux attach -t res0nance || tmux new -s res0nance
+fi
 
 alias tmux-sessionizer="~/.scripts/tmux-sessionizer"
 
