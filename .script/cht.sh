@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
-languages=`echo "golang lua cpp c tsc nodejs" | tr ' ' '\n'`
-core_utils=`echo "xrgs find mv sed awk" | tr ' ' '\n'`
+selected=`cat ~/.scripts/cht.langs ~/.scripts/cht.cmds | fzf`
+if [[ -z $selected ]]; then
+  exit 0
+fi
 
-selected=`printf "$languages\n$core_utils" | fzf`
-read -p "query: " query
+read -p "Enter query: " query
 
-if printf $languages | grep -qs $selected; then
-  tmux neww bash -c "curl cht.sh/$selected/`echo $query | tr ' ' '+'` & while [ : ]; do sleep 1; done"
+if grep -qs "$selected" ~/.scripts/cht.langs; then
+  tmux neww bash -c "echo \"curl cht.sh/$selected/$query/\" & curl cht.sh/$selected/$query & while [ : ]; do sleep 1; done"
 else
-  tmux neww bash -c "curl cht.sh/$selected~$query & while [ : ]; do sleep 1; done"
+  tmux neww bash -c "curl -s cht.sh/$selected~$query | less"
 fi
