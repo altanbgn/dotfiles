@@ -4,13 +4,11 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-source ~/.nvm/nvm.sh
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="amuse"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -76,18 +74,24 @@ plugins=(git vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
 
+# =========================
+# User configuration
+# =========================
 # Enable vi mode
 bindkey -v
-bindkey -s ^f "~/.scripts/tmux-sessionizer"
+bindkey -s ^f "~/.scripts/tmux-sessionizer.sh\n"
+bindkey -s ^g "cd \$(find ~/Personal -mindepth 1 -maxdepth 2 -type d | fzf)\n"
 
 # If there is no tmux, create one XD
 if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
   tmux attach -t res0nance || tmux new -s res0nance
 fi
 
-alias tmux-sessionizer="~/.scripts/tmux-sessionizer"
+# =========================
+# Aliases
+# =========================
+alias vim="nvim"
 
 # Git aliases
 alias gs="git status"
@@ -97,14 +101,33 @@ alias gd="git diff"
 alias g+="git add ."
 
 # Navigation
-alias work="cd ~/Documents/gobi"
-alias personal="cd ~/Documents/personal"
-alias vim="nvim"
+alias projects="cd ~/Personal/projects"
+alias freelance="cd ~/Personal/freelance"
+alias youtube="cd ~/Personal/youtube"
+alias tmux-sessionizer="~/.scripts/tmux-sessionizer.sh"
 
+# =========================
+# Exports
+# =========================
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
+
+# Golang
+export PATH=$PATH:/usr/local/go/bin
+
+# Node Version Manager
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+# pnpm
+export PNPM_HOME="/home/altanbgn/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -115,3 +138,12 @@ export LANG=en_US.UTF-8
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
