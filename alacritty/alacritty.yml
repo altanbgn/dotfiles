@@ -48,8 +48,8 @@ cursor:
   unfocused_follow: true
 
 key_bindings:
-  - { key: Equals, mods: Control, action: IncreaseFontSize }
-  - { key: Plus, mods: Control, action: IncreaseFontSize }
-  - { key: Minus, mods: Control, action: DecreaseFontSize }
-  - { key: L, mods: Control, action: ClearLogNotice }
-  - { key: L, mods: Control, chars: "\x0c" }
+  - { key: Equals, mods: Option, action: IncreaseFontSize }
+  - { key: Plus, mods: Option, action: IncreaseFontSize }
+  - { key: Minus, mods: Option, action: DecreaseFontSize }
+  - { key: L, mods: Option, action: ClearLogNotice }
+  - { key: L, mods: Option, chars: "\x0c" }
