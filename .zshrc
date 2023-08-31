@@ -80,8 +80,8 @@ source $ZSH/oh-my-zsh.sh
 # =========================
 # Enable vi mode
 bindkey -v
-bindkey -s ^f "~/.scripts/tmux-sessionizer.sh\n"
-bindkey -s ^g "cd \$(find ~/Personal -mindepth 1 -maxdepth 2 -type d | fzf)\n clear\n"
+bindkey -s ^f "cd \$(find ~/Personal -mindepth 1 -maxdepth 2 -type d | fzf)\n clear\n"
+bindkey -s ^g "~/.scripts/tmux-sessionizer.sh\n"
 
 # If there is no tmux, create one XD
 if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
