@@ -74,14 +74,13 @@ plugins=(git vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
-
 # =========================
 # User configuration
 # =========================
 # Enable vi mode
 bindkey -v
-bindkey -s ^f "cd \$(find ~/Personal -mindepth 1 -maxdepth 2 -type d | fzf)\n clear\n"
-bindkey -s ^g "~/.scripts/tmux-sessionizer.sh\n"
+bindkey -s ^f "cd \$(find $HOME/Personal -mindepth 1 -maxdepth 2 -type d | fzf)\n clear\n"
+bindkey -s ^g "$HOME/.config/tmux-sessionizer.sh\n"
 
 # If there is no tmux, create one XD
 if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
@@ -102,10 +101,7 @@ alias gd="git diff"
 alias g+="git add ."
 
 # Navigation
-alias projects="cd ~/Personal/projects"
-alias freelance="cd ~/Personal/freelance"
-alias youtube="cd ~/Personal/youtube"
-alias tmux-sessionizer="~/.scripts/tmux-sessionizer.sh"
+alias tmux-sessionizer="$HOME/.config/scripts/tmux-sessionizer.sh"
 
 # =========================
 # Exports
@@ -148,3 +144,4 @@ esac
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
