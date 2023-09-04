@@ -1,0 +1,75 @@
+configuration {
+    font:                "Fira Code 12";
+    show-icons:          true;
+    icon-theme:          "oomox-gruvbox-dark";
+    display-drun:        "";
+    drun-display-format: "{name}";
+    scroll-method:       0;
+    disable-history:     false;
+    sidebar-mode:        false;
+}
+
+@theme "gruvbox-dark"
+
+window {
+    border: 0;
+    padding: 30;
+}
+listview {
+    lines: 8;
+    columns: 1;
+}
+mainbox {
+    border: 0;
+    padding: 0;
+}
+message {
+    border: 2px 0px 0px;
+    padding: 1px;
+}
+listview {
+    fixed-height: 0;
+    border: 0px 0px 0px;
+    spacing: 8px;
+    scrollbar: false;
+    padding: 14px 0px 0px;
+}
+element {
+    border: 0;
+    padding: 10px;
+}
+scrollbar {
+    width: 4px;
+    border: 0;
+    handle-width: 8px;
+    padding: 0;
+}
+mode-switcher {
+    border: 2px 0px 0px;
+}
+button {
+    spacing: 0;
+}
+inputbar {
+
+    spacing: 0;
+    padding: 1px;
+}
+case-indicator {
+    spacing: 0;
+}
+entry {
+  spacing: 0;
+  font: "Fira Code 16";
+}
+prompt {
+  spacing: 0;
+  font: "Font Awesome 6 Free 20";
+}
+inputbar { children: [ prompt,textbox-prompt-colon,entry,case-indicator ]; }
+textbox-prompt-colon {
+    expand: false;
+    font: "Fira Code 16";
+    padding: 12px;
+    color: #FFFFFF;
+}

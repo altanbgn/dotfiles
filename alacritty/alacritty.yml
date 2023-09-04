@@ -2,18 +2,18 @@ env:
   TERM: xterm-256color
 
 font:
-  size: 10
+  size: 12
   normal:
-    family: Hack Nerd Font Mono
+    family: FiraCode Nerd Font Mono
     style: Regular
   italic:
-    family: Hack Nerd Font Mono
+    family: FiraCode Nerd Font Mono
     style: Regular Italic
   bold:
-    family: Hack Nerd Font Mono
+    family: FiraCode Nerd Font Mono
     style: Bold
   bold_italic:
-    family: Hack Nerd Font Mono
+    family: FiraCode Nerd Font Mono
     style: Bold Italic
 
 window:
