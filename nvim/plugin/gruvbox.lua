@@ -1,8 +1,5 @@
-vim.opt.background = "dark"
-vim.cmd([[colorscheme gruvbox]])
-
 require("gruvbox").setup({
-  undercurl = true,
+  undercurl = false,
   underline = true,
   bold = true,
   italic = {
@@ -16,12 +13,13 @@ require("gruvbox").setup({
   invert_signs = false,
   invert_tabline = false,
   invert_intend_guides = false,
-  inverse = true,    -- invert background for search, diffs, statuslines and errors
-  contrast = "hard", -- can be "hard", "soft" or empty string
+  inverse = true,
+  contrast = "hard", -- "hard" | "soft"
   palette_overrides = {},
   overrides = {},
-  dim_inactive = false,
+  dim_inactive = true,
   transparent_mode = true,
 })
 
+vim.opt.background = "dark"
 vim.cmd("colorscheme gruvbox")
