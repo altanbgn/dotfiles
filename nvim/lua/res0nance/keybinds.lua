@@ -28,3 +28,4 @@ vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.dotfiles/nvim/.config/nvim/lua/res
 vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 
 vim.keymap.set("n", "<leader>c", "<cmd>nohl<CR>")
+vim.keymap.set("n", "<leader>pv", "<cmd>Ex<CR>")
