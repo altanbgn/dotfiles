@@ -31,13 +31,6 @@ return require("packer").startup(function(use)
   end})
 
   use({
-    "nvim-tree/nvim-tree.lua",
-    requires = {
-      "antosha417/nvim-lsp-file-operations"
-    }
-  })
-
-  use({
     "nvim-treesitter/nvim-treesitter",
     run = function()
       require("nvim-treesitter.install").update({ with_sync = true })
