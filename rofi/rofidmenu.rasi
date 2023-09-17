@@ -1,7 +1,7 @@
 configuration {
-    font:                "Fira Code 12";
+    font:                "Liberation Mono 12";
     show-icons:          true;
-    icon-theme:          "oomox-gruvbox-dark";
+    icon-theme:          "Adwaita";
     display-drun:        "";
     drun-display-format: "{name}";
     scroll-method:       0;
@@ -9,7 +9,7 @@ configuration {
     sidebar-mode:        false;
 }
 
-@theme "gruvbox-dark"
+@theme "rose-pine"
 
 window {
     border: 0;
@@ -51,7 +51,6 @@ button {
     spacing: 0;
 }
 inputbar {
-
     spacing: 0;
     padding: 1px;
 }
@@ -60,7 +59,7 @@ case-indicator {
 }
 entry {
   spacing: 0;
-  font: "Fira Code 16";
+  font: "Liberation Mono 16";
 }
 prompt {
   spacing: 0;
@@ -69,7 +68,7 @@ prompt {
 inputbar { children: [ prompt,textbox-prompt-colon,entry,case-indicator ]; }
 textbox-prompt-colon {
     expand: false;
-    font: "Fira Code 16";
-    padding: 12px;
+    font: "Liberation Mono 12";
+    padding: 4px 4px 0px;
     color: #FFFFFF;
 }
