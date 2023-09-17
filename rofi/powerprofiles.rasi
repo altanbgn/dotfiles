@@ -1,5 +1,5 @@
 configuration {
-    font:             "Fira Code 10";
+    font:             "Liberation Mono 10";
     show-icons:       false;
     icon-theme:       "oomox-gruvbox-dark";
     scroll-method:    0;
@@ -9,7 +9,7 @@ configuration {
     sidebar-mode:     false;
 }
 
-@theme "gruvbox-dark"
+@theme "rose-pine"
 
 window {
     border: 0;
