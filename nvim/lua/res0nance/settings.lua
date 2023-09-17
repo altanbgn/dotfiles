@@ -1,5 +1,4 @@
 vim.api.nvim_set_option("clipboard", "unnamedplus")
-vim.opt.paste = true
 vim.opt.cursorline = true
 
 vim.opt.number = true
