@@ -1,5 +1,17 @@
 # Personal dotfiles
 
+## Screenshots (Linux)
+![Linux1](https://github.com/altanbgn/dotfiles/blob/main/screenshots/screenshot-i3-1.png)
+
+![Linux2](https://github.com/altanbgn/dotfiles/blob/main/screenshots/screenshot-i3-2.png)
+
+## Screenshots (MacOS)
+![MacOS1](https://github.com/altanbgn/dotfiles/blob/main/screenshots/screenshot-1.png)
+
+![MacOS2](https://github.com/altanbgn/dotfiles/blob/main/screenshots/screenshot-1.png)
+
+![MacOS3](https://github.com/altanbgn/dotfiles/blob/main/screenshots/screenshot-1.png)
+
 ## For Linux
 [dunst](https://github.com/dunst-project/dunst) - Notification daemon
 
