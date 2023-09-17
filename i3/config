@@ -2,7 +2,7 @@
 # config starts here: #
 #######################
 
-font pango: Fira Code 10
+font pango: Liberation Mono 10
 workspace_layout default
 for_window [class="^.*"] border pixel 4
 default_border pixel 4
@@ -88,6 +88,8 @@ bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+h focus left
 bindsym $mod+l focus right
+bindsym $mod+n focus left
+bindsym $mod+p focus right
 
 # move focused window
 bindsym $mod+Shift+j move down
@@ -146,7 +148,7 @@ exec --no-startup-id dex --autostart --environment i3
 
 # configure multiple keyboard layouts and hotkey to switch (Alt+CAPSLOCK in this example)
 #exec --no-startup-id setxkbmap -layout 'us,sk' -variant altgr-intl,qwerty -option 'grp:alt_caps_toggle'
-exec --no-startup-id xrandr --output HDMI-A-0 --mode 1920x1080 --rate 239.96
+exec xrandr --output HDMI-A-0 --mode 1920x1080 --rate 239.96
 
 # start a script to setup displays
 # uncomment the next line, use arandr to setup displays and save the file as monitor:
@@ -183,12 +185,12 @@ for_window [window_role="About"] floating enable
 ################
 
 # Lock
-bindsym $mod+Escape exec i3lock --nofork -i $HOME/.config/i3/wallpapers/wallpaper-1.jpg/
+bindsym $mod+Escape exec i3lock --nofork -i ~/.config/i3/wallpapers/wallpaper-3.png
 
-## App shortcuts
+# App shortcuts
 bindsym Print exec scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
 
-## Pulse Audio Control
+# Pulse Audio Control
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increases volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #increases volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle #increases volume
@@ -199,14 +201,8 @@ bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
-## rofi bindings fancy application menu ($mod+d /F9 optional disabled)
-bindsym $mod+d exec rofi -modi drun -show drun \
-  -config ~/.config/rofi/rofidmenu.rasi
+# rofi bindings fancy application menu ($mod+d /F9 optional disabled)
+bindsym $mod+space exec rofi -modi drun -show drun -config ~/.config/rofi/rofidmenu.rasi
 
-bindsym $mod+p exec ~/.config/i3/scripts/powermenu
-bindsym $mod+e exec ~/.config/i3/scripts/powerprofiles
-
-#bindsym $mod+space exec rofi -show window \
-#		-config ~/.config/rofi/rofidmenu.rasi
-#bindsym $mod+c exec --no-startup-id rofi -modi "clipboard:greenclip print" -show clipboard \
-#		-config ~/.config/rofi/rofidmenu.rasi
+bindsym $mod+e exec ~/.config/i3/scripts/powermenu
+bindsym $mod+z exec ~/.config/i3/scripts/powerprofiles
