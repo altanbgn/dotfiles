@@ -120,14 +120,14 @@ bindsym $mod+a focus parent
 # Colors                                    #
 #############################################
 
-# class                 border  backgr. text    indicator child_border
-client.focused          #F0C674 #F0C674 #333333 #F0C674   #F0C674
-client.focused_inactive #282A2E #282A2E #333333 #282A2E   #282A2E
-client.unfocused        #282A2E #282A2E #888888 #282A2E   #282A2E
-client.urgent           #2f343a #900000 #ffffff #900000   #900000
-client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+#class                  border  backgr. text    indicator child_border
+client.focused          #31748f #31748f #e0def4 #31748f   #31748f
+client.focused_inactive #191724 #191724 #6e6a86 #191724   #191724
+client.unfocused        #191724 #191724 #6e6a86 #191724   #191724
+client.urgent           #191724 #191724 #6e6a86 #191724   #191724
+client.placeholder      #191724 #191724 #6e6a86 #191724   #191724
 
-client.background       #ffffff
+client.background       #191724
 
 #############################################
 # autostart applications/services on login: #
