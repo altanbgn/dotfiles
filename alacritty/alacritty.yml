@@ -4,16 +4,16 @@ env:
 font:
   size: 12
   normal:
-    family: FiraCode Nerd Font Mono
+    family: Liberation Mono
     style: Regular
   italic:
-    family: FiraCode Nerd Font Mono
-    style: Regular Italic
+    family: Liberation Mono
+    style: Italic
   bold:
-    family: FiraCode Nerd Font Mono
+    family: Liberation Mono
     style: Bold
   bold_italic:
-    family: FiraCode Nerd Font Mono
+    family: Liberation Mono
     style: Bold Italic
 
 window:
