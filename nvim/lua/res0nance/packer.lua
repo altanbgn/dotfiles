@@ -17,7 +17,7 @@ return require("packer").startup(function(use)
   use("eandrju/cellular-automaton.nvim")
 
   -- Colorscheme
-  use("ellisonleao/gruvbox.nvim")
+  use({ "rose-pine/neovim", as = "rose-pine" })
 
   -- Dependant
   use("nvim-lua/plenary.nvim")
