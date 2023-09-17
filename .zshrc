@@ -17,7 +17,7 @@ source $ZSH/oh-my-zsh.sh
 # Enable vi mode
 bindkey -v
 bindkey -s ^f "cd \$(find $HOME/Personal -mindepth 1 -maxdepth 2 -type d | fzf)\n clear\n"
-bindkey -s ^g "$HOME/.config/tmux-sessionizer.sh\n"
+bindkey -s ^g "tmux-sessionizer\n"
 
 # If there is no tmux, create one XD
 if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
