@@ -1,18 +1,26 @@
 require("res0nance.settings")
 require("res0nance.keybinds")
-
-local augroup = vim.api.nvim_create_augroup
-local res0nanceGroup = augroup("res0nance", {})
+require("res0nance.packer")
 
 local autocmd = vim.api.nvim_create_autocmd
-local yank_group = augroup("HighlightYank", {})
+local augroup = vim.api.nvim_create_augroup
+
+local res0nanceGroup = augroup("res0nance", {})
+local yankGroup = augroup("HighlightYank", {})
+local netrwGroup = augroup("NetrwCommands", { clear = true })
 
 function R(name)
   require("plenary.reload").reload_module(name)
 end
 
+autocmd("BufWritePre", {
+  group = res0nanceGroup,
+  pattern = "*",
+  command = [[%s/\s\+$//e]],
+})
+
 autocmd("TextYankPost", {
-  group = yank_group,
+  group = yankGroup,
   pattern = "*",
   callback = function()
     vim.highlight.on_yank({
@@ -22,9 +30,18 @@ autocmd("TextYankPost", {
   end,
 })
 
-autocmd({"BufWritePre"}, {
-  group = res0nanceGroup,
-  pattern = "*",
-  command = [[%s/\s\+$//e]],
-})
+autocmd("filetype", {
+  group = netrwGroup,
+  pattern = "netrw",
+  desc = "Keybinds for netrw",
+  callback = function()
+    local bufmap = function(lhs, rhs)
+      local opts = { buffer = true, remap = true }
+      vim.keymap.set("n", lhs, rhs, opts)
+    end
 
+    -- Better navigation
+    bufmap("h", "-^")
+    bufmap("l", "<CR>")
+  end
+})
