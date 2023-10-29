@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# Copied from PrimeAgen (the god xd)
-# Best script ever made by him
+# Copied from PrimeAgen
 
 if [[ $# -eq 1 ]]; then
     selected=$1
