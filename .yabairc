@@ -2,8 +2,8 @@
 # Config #
 ##########
 
-yabai -m config layout bsp
-yabai -m config top_padding 50
+yabai -m config layout stack
+yabai -m config top_padding 10
 yabai -m config bottom_padding 10
 yabai -m config left_padding 10
 yabai -m config right_padding 10
@@ -15,12 +15,12 @@ yabai -m config focus_follows_mouse autofocus
 
 yabai -m config window_shadow on
 yabai -m config window_border on
-yabai -m config window_border_width 5
+yabai -m config window_border_width 10
 yabai -m config active_window_border_color 0xff8ec87c
 yabai -m config normal_window_border_color 0xff7c6f64
 
-yabai -m config window_opacity off
-yabai -m config window_border_blur off
+yabai -m config window_opacity on
+yabai -m config window_border_blur on
 
 ##########
 # Rules #
