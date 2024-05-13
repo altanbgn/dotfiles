@@ -1,21 +1,19 @@
 # Personal dotfiles
 
 ## Screenshots (Linux)
-![Linux1](https://github.com/altanbgn/dotfiles/blob/main/screenshots/screenshot-i3-1.png)
+![Linux1](https://github.com/altanbgn/dotfiles/blob/main/screenshots/screenshot-linux-1.png)
 
-![Linux2](https://github.com/altanbgn/dotfiles/blob/main/screenshots/screenshot-i3-2.png)
+![Linux2](https://github.com/altanbgn/dotfiles/blob/main/screenshots/screenshot-linux-2.png)
 
 ## Screenshots (MacOS)
-![MacOS1](https://github.com/altanbgn/dotfiles/blob/main/screenshots/screenshot-1.png)
+![MacOS1](https://github.com/altanbgn/dotfiles/blob/main/screenshots/screenshot-mac-1.png)
 
-![MacOS2](https://github.com/altanbgn/dotfiles/blob/main/screenshots/screenshot-2.png)
-
-![MacOS3](https://github.com/altanbgn/dotfiles/blob/main/screenshots/screenshot-3.png)
+![MacOS2](https://github.com/altanbgn/dotfiles/blob/main/screenshots/screenshot-mac-2.png)
 
 ## For Linux
-[dunst](https://github.com/dunst-project/dunst) - Notification daemon
-
 [i3](https://i3wm.org) - Tiling window manager
+
+[dunst](https://github.com/dunst-project/dunst) - Notification daemon
 
 [rofi](https://github.com/davatorium/rofi) - Dmenu replacement
 
