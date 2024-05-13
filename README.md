@@ -1,5 +1,7 @@
 # Personal dotfiles
 
+Keyboard - Corne Cherry V2
+
 ## Screenshots (Linux)
 ![Linux1](https://github.com/altanbgn/dotfiles/blob/main/screenshots/screenshot-linux-1.png)
 
