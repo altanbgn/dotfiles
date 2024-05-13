@@ -3,8 +3,6 @@
 ## Screenshots (Linux)
 ![Linux1](https://github.com/altanbgn/dotfiles/blob/main/screenshots/screenshot-linux-1.png)
 
-![Linux2](https://github.com/altanbgn/dotfiles/blob/main/screenshots/screenshot-linux-2.png)
-
 ## Screenshots (MacOS)
 ![MacOS1](https://github.com/altanbgn/dotfiles/blob/main/screenshots/screenshot-mac-1.png)
 
