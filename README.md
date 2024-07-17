@@ -1,5 +1,5 @@
 <h1 align="center">Personal dotfiles</h1>
-![setup](https://imgur.com/a/ihl8A2N)
+![arch setup](https://imgur.com/a/ihl8A2N)
 
 ## How to use?
 
@@ -25,15 +25,15 @@
 If you install these dependencies, my dotfiles will work flawlessly (i hope)
 Even tho I don't remember every single one of them, I will try to keep this list up to date
 
-`rofi-wayland`
-`grim`
-`noto-fonts`
-`noto-fonts-cjk`
-`noto-fonts-emoji`
-`noto-fonts-extra`
-`otf-font-awesome`
-`swaylock-effects-git`
-`swaybg`
-`waybar`
-`wl-clipboard`
-`xorg-xwayland`
+`rofi-wayland`<br/>
+`grim`<br/>
+`noto-fonts`<br/>
+`noto-fonts-cjk`<br/>
+`noto-fonts-emoji`<br/>
+`noto-fonts-extra`<br/>
+`otf-font-awesome`<br/>
+`swaylock-effects-git`<br/>
+`swaybg`<br/>
+`waybar`<br/>
+`wl-clipboard`<br/>
+`xorg-xwayland`<br/>
