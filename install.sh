@@ -12,6 +12,7 @@ check_prog curl
 mkdir -p "$HOME/.config"
 
 echo "Stow is doing it's magic. Please wait..."
+
 stow --target "$HOME" --no-folding alacritty
 stow --target "$HOME" --no-folding dunst
 stow --target "$HOME" --no-folding git
