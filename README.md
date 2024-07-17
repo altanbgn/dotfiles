@@ -1,36 +1,41 @@
-# Personal dotfiles
+<h1 align="center">Personal dotfiles</h1>
+![setup](https://github.com/altanbgn/dotfiles/blob/main/images/screenshot-1.png)
 
-## Screenshots (Linux)
-![Linux1](https://github.com/altanbgn/dotfiles/blob/main/screenshots/screenshot-linux-1.png)
+## How to use?
 
-## Screenshots (MacOS)
-![MacOS1](https://github.com/altanbgn/dotfiles/blob/main/screenshots/screenshot-mac-1.png)
+1. Clone this repository
 
-![MacOS2](https://github.com/altanbgn/dotfiles/blob/main/screenshots/screenshot-mac-2.png)
+    ```bash
+    git clone https://github.com/altanbgn/dotfiles
+    cd dotfiles
+    ```
 
-## For Linux
-[i3](https://i3wm.org) - Tiling window manager
+2. Install GNU Stow
 
-[dunst](https://github.com/dunst-project/dunst) - Notification daemon
+    ```bash
+    # I use arch btw
+    yay -S stow
+    # or
+    sudo pacman -S stow
+    ```
 
-[rofi](https://github.com/davatorium/rofi) - Dmenu replacement
+3. Uncomment the lines in [`install.sh`](./install.sh) of dotfiles you want to install
+4. Execute `./install.sh`.
 
-[picom](https://github.com/yshui/picom) - Compositor for xorg
+## Dependencies
 
-[polybar](https://github.com/polybar/polybar) - Status bar
+If you install these dependencies, my dotfiles will work flawlessly (i hope)
+Even tho I don't remember every single one of them, I will try to keep this list up to date
 
-## For Mac
-[skhd](https://github.com/koekeishiya/skhd) - Simple hotkey daemon for macOS
-
-[yabai](https://github.com/koekeishiya/yabai) - A tiling window manager for macOS
-
-[Übersicht](https://github.com/felixhageloh/uebersicht) - For widgets (ex. Topbar, Clock)
-
-## Terminal
-[alacritty](https://github.com/alacritty/alacritty) - Terminal emulator
-
-[neovim](https://github.com/neovim/neovim) - Neovim FTW
-
-[tmux](https://github.com/tmux/tmux) - Terminal multiplexer
-
-[ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) - Unix shell
+- `waybar`
+- `rofi-wayland`
+- `wl-clipboard`
+- `grim`
+- `noto-fonts`
+- `noto-fonts-cjk`
+- `noto-fonts-emoji`
+- `noto-fonts-extra`
+- `otf-font-awesome`
+- `swaylock-effects-git`
+- `swaybg`
+- `xorg-xwayland`

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+selected=$(find $HOME/.wallpapers/*${f/%.jpg/.png} | fzf)
+
+if [[ -z $selected ]]; then
+  exit 0
+fi
+
+killall swaybg
+swaybg -m fill -i $selected 2> /dev/null & sleep 0

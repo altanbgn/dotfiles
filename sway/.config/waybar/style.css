@@ -1,0 +1,156 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: "UbuntuMono Nerd Font Propo", sans-serif;
+    font-size: 14px;
+}
+
+window#waybar {
+    background: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    transition-property: background;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+tooltip {
+    background: #191724;
+    border: none;
+    font-size: 8px;
+}
+
+tooltip label {
+    color: white;
+}
+
+button {
+    box-shadow: inset 0 -3px transparent;
+    border: none;
+    border-radius: 0;
+}
+
+label:focus {
+    background: #000000;
+}
+
+.modules-left, .modules-right, .modules-center {
+    margin: 8px 10px 0;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#workspaces {
+    background: #191724;
+    border-radius: 6px;
+}
+
+#workspaces button {
+    background: transparent;
+    color: white;
+    padding: 0px 8px;
+    border-radius: 6px;
+    font-weight: 800;
+}
+
+#workspaces button:hover {
+    background: #26233a;
+}
+
+#workspaces button.focused {
+    background: #26233a;
+}
+
+#workspaces button.urgent {
+    background: #f6c177;
+}
+
+#workspaces button.active {
+    background: #eb6f92;
+    color: #26233a;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#network,
+#pulseaudio,
+#privacy,
+#power-profiles-daemon,
+#tray,
+#custom-media {
+    padding: 4px 12px;
+    color: #e0def4;
+    border-radius: 6px;
+}
+
+#clock { background: #191724; }
+#battery { background: #191724; }
+#battery.charging, #battery.plugged {}
+
+@keyframes blink {
+    to {
+        background: #ffffff;
+        color: #000000;
+    }
+}
+
+/* Using steps() instead of linear as a timing function to limit cpu usage */
+#battery.critical:not(.charging) {
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#power-profiles-daemon { background: #191724; }
+#power-profiles-daemon.performance { color: #e74c3c; }
+#power-profiles-daemon.balanced { color: #f39c12; }
+#power-profiles-daemon.power-saver { color: #2ecc71; }
+
+#cpu { background: #191724; }
+#memory { background: #191724; }
+
+#network { background: #191724; }
+#network.disconnected { }
+
+#pulseaudio { background: #191724; }
+#pulseaudio.muted { }
+
+#temperature { background: #191724; }
+#temperature.critical { }
+
+#tray {}
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}
+
+#mpd { }
+#mpd.disconnected { }
+#mpd.stopped { }
+#mpd.paused { }
+
+#privacy { background: #191724; }
+#privacy-item {
+    color: white;
+}
+#privacy-item.screenshare { }
+#privacy-item.audio-in { }
+#privacy-item.audio-out { }
+
+#custom-media { background: #191724; }

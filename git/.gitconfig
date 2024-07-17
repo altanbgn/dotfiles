@@ -1,0 +1,11 @@
+[init]
+    defaultBranch = main
+[credential]
+    helper = store
+[color]
+    ui = auto
+[pull]
+    ff = only
+[user]
+	email = altanbagana@protonmail.com
+	name = altanbgn

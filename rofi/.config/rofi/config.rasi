@@ -1,0 +1,101 @@
+* {
+  font: "UbuntuMono Nerd Font Propo 14";
+
+  bg: rgba(20,22,23,0.95);
+  fgd: #EEEEEE;
+  fgd2: #21202E;
+  primary: #EB6F92;
+}
+
+configuration {
+  show-icons:          true;
+  icon-theme:          "Gruvbox";
+  display-drun:        "";
+  scroll-method:       0;
+  disable-history:     false;
+  sidebar-mode:        false;
+}
+
+window {
+  width: 500px;
+  background-color: @bg;
+  border:           4px;
+  border-radius:    6;
+  border-color:     @primary;
+  padding:          10px;
+}
+
+mainbox {
+  border: 0;
+  padding: 4px;
+}
+
+listview {
+  lines: 10;
+  border: 0;
+  padding: 4px 0;
+}
+
+scrollbar {
+  width: 4px;
+  border: 0;
+  handle-width: 8px;
+  handle-color: @primary;
+  padding: 0;
+}
+
+element { padding: 8px; }
+element.normal.normal {
+  background-color: transparent;
+  text-color: @fgd;
+}
+element.normal.urgent {
+  background-color: transparent;
+  text-color: @fgd;
+}
+element.normal.active {
+  background-color: @primary;
+  text-color: @fgd2;
+}
+element.alternate.normal {
+  background-color: transparent;
+  text-color: @fgd;
+}
+element.alternate.urgent {
+  background-color: transparent;
+  text-color: @fgd;
+}
+element.alternate.active {
+  background-color: transparent;
+  text-color: @fgd2;
+}
+element.selected.normal {
+  background-color: @primary;
+  text-color:       @fgd2;
+}
+element.selected.urgent {
+  background-color: @primary;
+  text-color:       @fgd2;
+}
+element.selected.active {
+  background-color: @primary;
+  text-color:       @fgd2;
+}
+
+entry {
+  spacing:    0;
+  text-color: @fgd;
+}
+
+inputbar {
+  spacing: 0;
+  text-color: @fgd;
+  padding: 8px 12px;
+  children: [ prompt,entry,case-indicator ];
+}
+
+prompt {
+  text-color: @fgd;
+  spacing: 0;
+  padding: 0 16px 0 0;
+}
