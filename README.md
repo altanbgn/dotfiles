@@ -1,5 +1,6 @@
 <h1 align="center">Personal dotfiles</h1>
-![arch setup](https://imgur.com/a/ihl8A2N)
+
+![arch setup](https://i.imgur.com/sXuSDVO.png)
 
 ## How to use?
 
