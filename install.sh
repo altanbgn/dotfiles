@@ -26,6 +26,6 @@ stow --target "$HOME" --no-folding vim
 stow --target "$HOME" --no-folding xdg
 stow --target "$HOME" --no-folding zsh
 
-sudo stow --target "/usr/local/bin" --no-folding scripts
+stow --target "$HOME" --no-folding scripts
 
 echo "Done!"

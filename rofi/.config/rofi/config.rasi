@@ -1,10 +1,10 @@
 * {
-  font: "UbuntuMono Nerd Font Propo 14";
+  font: "AnonymicePro Nerd Font Propo 11";
 
   bg: rgba(20,22,23,0.95);
   fgd: #EEEEEE;
   fgd2: #21202E;
-  primary: #EB6F92;
+  primary: #285577;
 }
 
 configuration {
@@ -20,7 +20,7 @@ window {
   width: 500px;
   background-color: @bg;
   border:           4px;
-  border-radius:    6;
+  border-radius:    0;
   border-color:     @primary;
   padding:          10px;
 }

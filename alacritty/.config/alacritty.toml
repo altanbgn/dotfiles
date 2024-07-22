@@ -8,22 +8,22 @@ style = "Block"
 TERM = "xterm-256color"
 
 [font]
-size = 10
+size = 11
 
 [font.bold]
-family = "JetBrainsMono Nerd Font Mono"
+family = "AnonymicePro Nerd Font Mono"
 style = "Bold"
 
 [font.bold_italic]
-family = "JetBrainsMono Nerd Font Mono"
+family = "AnonymicePro Nerd Font Mono"
 style = "Bold Italic"
 
 [font.italic]
-family = "JetBrainsMono Nerd Font Mono"
+family = "AnonymicePro Nerd Font Mono"
 style = "Italic"
 
 [font.normal]
-family = "JetBrainsMono Nerd Font Mono"
+family = "AnonymicePro Nerd Font Mono"
 style = "Regular"
 
 [[keyboard.bindings]]
