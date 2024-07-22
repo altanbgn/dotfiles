@@ -21,9 +21,9 @@ style = "Bold Italic"
 [font.italic]
 family = "JetBrainsMono Nerd Font Mono"
 style = "Italic"
-# ⡀
+
 [font.normal]
-family = "Hack Nerd Font Mono"
+family = "JetBrainsMono Nerd Font Mono"
 style = "Regular"
 
 [[keyboard.bindings]]

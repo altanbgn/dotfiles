@@ -16,11 +16,11 @@ echo "Stow is doing it's magic. Please wait..."
 stow --target "$HOME" --no-folding alacritty
 stow --target "$HOME" --no-folding dunst
 stow --target "$HOME" --no-folding git
-stow --target "$HOME" --no-folding hypr
-# stow --target "$HOME" --no-folding i3
+# stow --target "$HOME" --no-folding hypr
+stow --target "$HOME" --no-folding i3
 stow --target "$HOME" --no-folding nvim
 stow --target "$HOME" --no-folding rofi
-stow --target "$HOME" --no-folding sway
+# stow --target "$HOME" --no-folding sway
 stow --target "$HOME" --no-folding tmux
 stow --target "$HOME" --no-folding vim
 stow --target "$HOME" --no-folding xdg

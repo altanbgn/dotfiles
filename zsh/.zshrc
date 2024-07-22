@@ -35,3 +35,14 @@ alias v="nvim"
 source /usr/share/nvm/nvm.sh
 source /usr/share/nvm/bash_completion
 source /usr/share/nvm/install-nvm-exec
+
+# bun completions
+[ -s "/home/kadaj/.bun/_bun" ] && source "/home/kadaj/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+#golang
+export GOPATH="$HOME/.go"
+export PATH="$GOPATH/bin:$PATH"

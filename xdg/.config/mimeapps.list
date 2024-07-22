@@ -5,3 +5,4 @@ x-scheme-handler/http=firefox-developer-edition.desktop
 x-scheme-handler/https=firefox-developer-edition.desktop
 x-scheme-handler/about=firefox-developer-edition.desktop
 x-scheme-handler/unknown=firefox-developer-edition.desktop
+x-scheme-handler/postman=Postman.desktop

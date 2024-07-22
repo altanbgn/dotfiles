@@ -6,5 +6,4 @@ if [[ -z $selected ]]; then
   exit 0
 fi
 
-killall swaybg
-swaybg -m fill -i $selected 2> /dev/null & sleep 0
+feh --bg-fill $selected 2> /dev/null & sleep 0
