@@ -26,6 +26,8 @@
 If you install these dependencies, my dotfiles will work flawlessly (i hope)
 Even tho I don't remember every single one of them, I will try to keep this list up to date
 
+For hyprland
+
 `rofi-wayland`<br/>
 `grim`<br/>
 `noto-fonts`<br/>
@@ -38,3 +40,9 @@ Even tho I don't remember every single one of them, I will try to keep this list
 `waybar`<br/>
 `wl-clipboard`<br/>
 `xorg-xwayland`<br/>
+
+For i3
+`polybar`<br/>
+`picom`<br/>
+`rofi`<br/>
+`feh`<br/>
