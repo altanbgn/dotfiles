@@ -1,9 +1,8 @@
 * {
   font: "AnonymicePro Nerd Font Propo 11";
 
-  bg: rgba(20,22,23,0.95);
-  fgd: #EEEEEE;
-  fgd2: #21202E;
+  bg: #141617;
+  fgd: #e0def4;
   primary: #285577;
 }
 
@@ -23,6 +22,10 @@ window {
   border-radius:    0;
   border-color:     @primary;
   padding:          10px;
+}
+
+textbox {
+  text-color: @fgd;
 }
 
 mainbox {
@@ -55,7 +58,7 @@ element.normal.urgent {
 }
 element.normal.active {
   background-color: @primary;
-  text-color: @fgd2;
+  text-color: @fgd;
 }
 element.alternate.normal {
   background-color: transparent;
@@ -67,19 +70,19 @@ element.alternate.urgent {
 }
 element.alternate.active {
   background-color: transparent;
-  text-color: @fgd2;
+  text-color: @fgd;
 }
 element.selected.normal {
   background-color: @primary;
-  text-color:       @fgd2;
+  text-color:       @fgd;
 }
 element.selected.urgent {
   background-color: @primary;
-  text-color:       @fgd2;
+  text-color:       @fgd;
 }
 element.selected.active {
   background-color: @primary;
-  text-color:       @fgd2;
+  text-color:       @fgd;
 }
 
 entry {

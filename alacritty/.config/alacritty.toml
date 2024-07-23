@@ -64,7 +64,3 @@ opacity = 0.9
 [window.class]
 general = "Alacritty"
 instance = "Alacritty"
-
-[window.padding]
-x = 8
-y = 8

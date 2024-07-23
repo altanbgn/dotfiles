@@ -28,15 +28,15 @@
     horizontal_padding = 8
     text_icon_padding = 0
 
-    frame_width = 0
-    frame_color = "#eb6f92"
+    frame_width = 3
+    frame_color = "#285577"
 
     separator_color = auto
     sort = yes
     idle_threshold = 1
 
     ### Text ###
-    font = UbuntuMono Nerd Font Mono 14
+    font = AnonymicePro Nerd Font Propo 11
     line_height = 0
     markup = full
 
@@ -89,7 +89,7 @@
     title = Dunst
     class = Dunst
 
-    corner_radius = 8
+    corner_radius = 0
     ignore_dbusclose = false
 
     ### Wayland ###
@@ -104,22 +104,22 @@
     per_monitor_dpi = false
 
 [urgency_low]
-    background = "#191724"
-    foreground = "#ffffff"
+    background = "#000000"
+    foreground = "#e0def4"
     timeout = 5
 
     icon = /usr/share/icons/Arc-X-D/status/16/dialog-information.png
 
 [urgency_normal]
     background = "#191724"
-    foreground = "#ffffff"
+    foreground = "#e0def4"
     timeout = 5
 
     icon = /usr/share/icons/Arc-X-D/status/16/dialog-question.png
 
 [urgency_critical]
     background = "#191724"
-    foreground = "#ffffff"
+    foreground = "#e0def4"
     timeout = 120
 
     icon = /usr/share/icons/Arc-X-D/status/16/dialog-warning.png
