@@ -43,6 +43,7 @@ endif
 syntax on
 set ruler
 set number
+set relativenumber
 
 "" Better command line completion
 set wildmenu

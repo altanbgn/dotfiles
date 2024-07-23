@@ -18,6 +18,25 @@ return require("packer").startup(function(use)
   use("eandrju/cellular-automaton.nvim")
   use("nvim-lualine/lualine.nvim")
 
+  -- Org
+  use({
+    'nvim-orgmode/orgmode',
+    config = function()
+      -- Setup orgmode
+      require('orgmode').setup({
+        org_agenda_files = '~/Personal/.orgfiles/**/*',
+        org_default_notes_file = '~/Personal/.orgfiles/refile.org',
+      })
+
+      -- NOTE: If you are using nvim-treesitter with ~ensure_installed = "all"~ option
+      -- add ~org~ to ignore_install
+      -- require('nvim-treesitter.configs').setup({
+      --   ensure_installed = 'all',
+      --   ignore_install = { 'org' },
+      -- })
+    end,
+  })
+
   -- AI
   -- use("github/copilot.vim")
   use("Exafunction/codeium.vim")
@@ -70,7 +89,8 @@ return require("packer").startup(function(use)
       { "neovim/nvim-lspconfig" },
 
       -- Autocompletion
-      { "hrsh7th/nvim-cmp",
+      {
+        "hrsh7th/nvim-cmp",
         branch = "main",
         commit = "7e348da6e5085ac447144a2ef4b637220ba27209"
       },

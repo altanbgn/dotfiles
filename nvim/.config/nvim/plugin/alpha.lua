@@ -121,7 +121,7 @@ local buttons = {
   styled_button("SPC f f", "󰈞 Find Files"),
   styled_button("SPC f g", " Live Grep"),
   styled_button("SPC f r", "󱑃 Recent Files"),
-  styled_button("SPC f p", "󰒓 Configuration", ":e ~/.config/nvim/lua/res0nance/packer.lua<CR>"),
+  styled_button("SPC f p", "󰒓 Configuration", ":e ~/.config/nvim/lua/resxnance/packer.lua<CR>"),
   styled_button("U", " Update Packages", ":PackerSync<CR>"),
   styled_button("q", " Quit", ":q!<CR>")
 }

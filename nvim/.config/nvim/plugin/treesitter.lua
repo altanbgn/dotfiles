@@ -6,6 +6,7 @@ require("nvim-treesitter.configs").setup {
     enable = true,
     additional_vim_regex_highlighting = { "markdown" },
   },
+  ignore_install = { "org" },
   ensure_installed = {
     "bash",
     "comment",
