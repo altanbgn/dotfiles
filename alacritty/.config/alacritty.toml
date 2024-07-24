@@ -7,6 +7,20 @@ style = "Block"
 [env]
 TERM = "xterm-256color"
 
+[window]
+dynamic_padding = false
+opacity = 0.9
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[scrolling]
+history = 5000
+
+[selection]
+save_to_clipboard = true
+
 [font]
 size = 11
 
@@ -50,17 +64,3 @@ mods = "Option"
 chars = "\f"
 key = "L"
 mods = "Option"
-
-[scrolling]
-history = 5000
-
-[selection]
-save_to_clipboard = true
-
-[window]
-dynamic_padding = false
-opacity = 0.9
-
-[window.class]
-general = "Alacritty"
-instance = "Alacritty"

@@ -27,22 +27,12 @@ return require("packer").startup(function(use)
         org_agenda_files = '~/Personal/.orgfiles/**/*',
         org_default_notes_file = '~/Personal/.orgfiles/refile.org',
       })
-
-      -- NOTE: If you are using nvim-treesitter with ~ensure_installed = "all"~ option
-      -- add ~org~ to ignore_install
-      -- require('nvim-treesitter.configs').setup({
-      --   ensure_installed = 'all',
-      --   ignore_install = { 'org' },
-      -- })
     end,
   })
 
   -- AI
   -- use("github/copilot.vim")
   use("Exafunction/codeium.vim")
-
-  -- Note taking
-  -- use("epwalsh/obsidian.nvim")
 
   -- Indent lines and indicators
   use({
