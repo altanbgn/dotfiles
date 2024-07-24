@@ -23,7 +23,7 @@ bindkey -s ^b "bg-changer\n"
 
 # If there is no tmux, create one XD
 if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-  tmux attach -t res0nance || tmux new -s res0nance
+  tmux attach -t main || tmux new -s main
 fi
 
 # =========================
