@@ -35,6 +35,9 @@ set $mod Mod4
 floating_modifier $mod
 
 tiling_drag modifier titlebar
+# Brightness
+bindsym XF86MonBrightnessUp   exec xbacklight -inc 2
+bindsym XF86MonBrightnessDown exec xbacklight -dec 2
 
 # Volume
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status

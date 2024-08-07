@@ -13,19 +13,19 @@ mkdir -p "$HOME/.config"
 
 echo "Stow is doing it's magic. Please wait..."
 
-stow --target "$HOME" --no-folding alacritty
-stow --target "$HOME" --no-folding dunst
-stow --target "$HOME" --no-folding git
+stow --target "$HOME" --no-folding alacritty --adopt
+stow --target "$HOME" --no-folding dunst --adopt
+stow --target "$HOME" --no-folding git --adopt
 # stow --target "$HOME" --no-folding hypr
-stow --target "$HOME" --no-folding i3
-stow --target "$HOME" --no-folding nvim
-stow --target "$HOME" --no-folding rofi
+stow --target "$HOME" --no-folding i3 --adopt
+stow --target "$HOME" --no-folding nvim --adopt
+stow --target "$HOME" --no-folding rofi --adopt
 # stow --target "$HOME" --no-folding sway
-stow --target "$HOME" --no-folding tmux
-stow --target "$HOME" --no-folding vim
-stow --target "$HOME" --no-folding xdg
-stow --target "$HOME" --no-folding zsh
+stow --target "$HOME" --no-folding tmux --adopt
+stow --target "$HOME" --no-folding vim --adopt
+stow --target "$HOME" --no-folding xdg --adopt
+stow --target "$HOME" --no-folding zsh --adopt
 
-stow --target "$HOME" --no-folding scripts
+stow --target "$HOME" --no-folding scripts --adopt
 
 echo "Done!"

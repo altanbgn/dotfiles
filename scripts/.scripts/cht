@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-selected=`cat /usr/local/bin/cht.langs /usr/local/bin/cht.cmds | fzf`
+selected=`cat $HOME/.scripts/cht.langs $HOME/.scripts/cht.cmds | fzf`
 if [[ -z $selected ]]; then
   exit 0
 fi
