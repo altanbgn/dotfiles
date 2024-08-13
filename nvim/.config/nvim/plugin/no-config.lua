@@ -24,4 +24,6 @@ require("ibl").overwrite({
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 vim.keymap.set("n", "<leader>tr", "<cmd>Trouble diagnostics<CR>")
 vim.keymap.set("n", "<leader>mir", "<cmd>CellularAutomaton make_it_rain<CR>");
+vim.keymap.set("n", "<leader>gol", "<cmd>CellularAutomaton game_of_life<CR>");
+vim.keymap.set("n", "<leader>scr", "<cmd>CellularAutomaton scramble<CR>");
 vim.keymap.set("n", "<leader>ct", "<cmd>CodeiumToggle<CR>");

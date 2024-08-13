@@ -1,6 +1,11 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+
+# =========================
+# Main path configurations
+# =========================
 export PATH="$PATH:$HOME/.scripts"
+export PATH="$PATH:$GOPATH/bin"
 
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
@@ -34,8 +39,18 @@ alias v="nvim"
 
 #golang
 export GOPATH="$HOME/.go"
-export PATH="$PATH:$GOPATH/bin"
 
+#nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#java
+export JAVA_HOME=/usr/lib/jvm/default
+export JDTLS_JVM_ARGS="-javaagent:$HOME/.local/share/java/lombok.jar"
+
+#ailab
+export AILAB_GROUP_ID=3707208
+export CI_SERVER_URL=https://gitlab.com
+export SPRING_PROFILES_ACTIVE=local
+
