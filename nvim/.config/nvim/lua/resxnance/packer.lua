@@ -42,7 +42,6 @@ return require("packer").startup(function(use)
   })
 
   -- Colorscheme
-  use({ "sainnhe/gruvbox-material", as = "gruvbox" })
   use({ "rose-pine/neovim", as = "rose-pine" })
 
   -- Git
