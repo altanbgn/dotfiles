@@ -34,9 +34,6 @@ fi
 # =========================
 # Aliases
 # =========================
-alias vi="nvim"
-alias v="nvim"
-
 #golang
 export GOPATH="$HOME/.go"
 
