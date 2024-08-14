@@ -38,7 +38,6 @@ autocmd("VimEnter", {
 })
 
 -- Keybinds for netrw
---
 autocmd("filetype", {
   group = netrwGroup,
   pattern = "netrw",

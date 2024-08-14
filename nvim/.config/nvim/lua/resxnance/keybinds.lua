@@ -12,7 +12,7 @@ vim.keymap.set("n", "N", "Nzzzv")
 -- greatest remap ever (Paste something without copying the selected visual)
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
--- next greatest remap ever : asbjornHaland
+-- next greatest remap ever: asbjornHaland
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
@@ -26,5 +26,5 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 vim.keymap.set("n", "<leader>fn", "<cmd>enew<CR>");
 vim.keymap.set("n", "<leader>fp", "<cmd>e ~/.config/nvim/lua/res0nance/packer.lua<CR>");
 
-vim.keymap.set("n", "<leader>c", "<cmd>nohl<CR>")
+vim.keymap.set("n", "<leader>ch", "<cmd>nohl<CR>")
 vim.keymap.set("n", "<leader>fe", "<cmd>Ex<CR>")
