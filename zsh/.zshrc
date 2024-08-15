@@ -34,9 +34,6 @@ fi
 # =========================
 # Aliases
 # =========================
-alias vi="nvim"
-alias v="nvim"
-
 #golang
 export GOPATH="$HOME/.go"
 
@@ -48,9 +45,3 @@ export NVM_DIR="$HOME/.nvm"
 #java
 export JAVA_HOME=/usr/lib/jvm/default
 export JDTLS_JVM_ARGS="-javaagent:$HOME/.local/share/java/lombok.jar"
-
-#ailab
-export AILAB_GROUP_ID=3707208
-export CI_SERVER_URL=https://gitlab.com
-export SPRING_PROFILES_ACTIVE=local
-
