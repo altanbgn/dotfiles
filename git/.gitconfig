@@ -1,7 +1,7 @@
 [init]
     defaultBranch = main
 [credential]
-	helper = store
+    helper = store
 [color]
     ui = auto
 [pull]
