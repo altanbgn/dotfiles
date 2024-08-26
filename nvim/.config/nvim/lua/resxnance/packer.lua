@@ -24,8 +24,8 @@ return require("packer").startup(function(use)
     config = function()
       -- Setup orgmode
       require('orgmode').setup({
-        org_agenda_files = '~/Personal/.orgfiles/**/*',
-        org_default_notes_file = '~/Personal/.orgfiles/refile.org',
+        org_agenda_files = '~/.orgfiles/**/*',
+        org_default_notes_file = '~/.orgfiles/notes.org',
       })
     end,
   })
@@ -47,6 +47,9 @@ return require("packer").startup(function(use)
   -- Git
   use("tpope/vim-fugitive")
   use("lewis6991/gitsigns.nvim")
+
+  -- ZEN MODE 🙏
+  use("folke/zen-mode.nvim")
 
   -- Utility
   use({
