@@ -24,8 +24,8 @@ return require("packer").startup(function(use)
         config = function()
             -- Setup orgmode
             require('orgmode').setup({
-                org_agenda_files = '~/Personal/.orgfiles/**/*',
-                org_default_notes_file = '~/Personal/.orgfiles/refile.org',
+                org_agenda_files = '~/Personal/.orgfiles/agenda/**/*',
+                org_default_notes_file = '~/Personal/.orgfiles/default/refile.org',
             })
         end,
     })
