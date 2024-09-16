@@ -23,11 +23,10 @@ vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>//gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
-vim.keymap.set("n", "<leader>fn", "<cmd>enew<CR>");
-vim.keymap.set("n", "<leader>fp", "<cmd>e ~/.config/nvim/lua/res0nance/packer.lua<CR>");
-
-vim.keymap.set("n", "<leader>ch", "<cmd>nohl<CR>")
-vim.keymap.set("n", "<leader>fe", "<cmd>Ex<CR>")
+vim.keymap.set("n", "<leader>fn", vim.cmd.enew);
+vim.keymap.set("n", "<leader>fp", function () vim.cmd.edit("~/.config/nvim/lua/resxnance/packer.lua"); end)
+vim.keymap.set("n", "<leader>ch", vim.cmd.nohl)
+vim.keymap.set("n", "<leader>fe", vim.cmd.Ex)
 
 vim.cmd([[
     cnoreabbrev W! w!

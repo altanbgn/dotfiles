@@ -1,10 +1,10 @@
 # Compiled Lua sources
 luac.out
 
-plugin/packer_compiled.lua
+nvim/.config/nvim/plugin/packer_compiled.lua
 
-# Fak acceidental undodir commit lmao
-undodir
+# Fak accidental undodir commit lmao
+nvim/.config/nvim/undodir
 
 # luarocks build files
 *.src.rock
@@ -44,3 +44,4 @@ undodir
 *.x86_64
 *.hex
 
+*.DS_Store
