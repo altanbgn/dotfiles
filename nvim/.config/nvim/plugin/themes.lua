@@ -2,20 +2,20 @@
 -- ROSE-PINE
 -- =========
 require("rose-pine").setup({
-    variant = "moon",      -- auto, main, moon, or dawn
-    dark_variant = "moon", -- main, moon, or dawn
-    dim_inactive_windows = true,
-    extend_background_behind_borders = true,
-    enable = {
-        terminal = true,
-        legacy_highlights = true,
-        migrations = true,
-    },
-    styles = {
-        bold = true,
-        italic = true,
-        transparency = true,
-    },
+  variant = "moon",        -- auto, main, moon, or dawn
+  dark_variant = "moon",   -- main, moon, or dawn
+  dim_inactive_windows = true,
+  extend_background_behind_borders = true,
+  enable = {
+    terminal = true,
+    legacy_highlights = true,
+    migrations = true,
+  },
+  styles = {
+    bold = true,
+    italic = true,
+    transparency = true,
+  },
 })
 
 -- =======
@@ -41,7 +41,13 @@ require("gruvbox").setup({
   inverse = true,
   contrast = "hard", -- "hard" | "soft"
   palette_overrides = {},
-  overrides = { },
+  overrides = {
+    SignColumn = { bg = "#1d2021" },
+    DiagnosticSignError = { fg = "#cc241d", bold = true },
+    DiagnosticSignWarn = { fg = "#fabd2f", bold = true },
+    DiagnosticSignHint = { fg = "#8ec07c", bold = true },
+    DiagnosticSignInfo = { fg = "#458588", bold = true },
+  },
   dim_inactive = false,
   transparent_mode = false,
 })
@@ -53,4 +59,3 @@ vim.cmd.colorscheme("gruvbox")
 
 -- vim.api.nvim_set_hl(0, "Normal", { ctermbg = 0 })
 -- vim.api.nvim_set_hl(0, "NormalNC", { ctermbg = 0 })
-
