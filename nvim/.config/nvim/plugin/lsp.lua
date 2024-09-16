@@ -13,7 +13,6 @@ lsp.ensure_installed({
   "svelte",
   "graphql",
   "lua_ls",
-  "golangci_lint_ls",
   "pylsp"
 })
 
