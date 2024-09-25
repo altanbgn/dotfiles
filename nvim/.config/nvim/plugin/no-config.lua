@@ -21,7 +21,8 @@ require("ibl").overwrite({
 })
 
 -- Keymaps
-vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
+vim.keymap.set("n", "<leader>u", "<cmd>UndotreeToggle<CR>")
+vim.keymap.set("n", "<leader>uf", "<cmd>UndotreeFocus<CR>")
 vim.keymap.set("n", "<leader>tr", "<cmd>Trouble diagnostics<CR>")
 vim.keymap.set("n", "<leader>mir", "<cmd>CellularAutomaton make_it_rain<CR>");
 vim.keymap.set("n", "<leader>gol", "<cmd>CellularAutomaton game_of_life<CR>");
