@@ -1,7 +1,6 @@
 <h1 align="center">Personal dotfiles</h1>
 
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\
- ~/.local/share/nvim/site/pack/packer/start/packer.nvim![arch setup](https://i.imgur.com/sXuSDVO.png)
+[arch setup](https://i.imgur.com/sXuSDVO.png)
 
 ## How to use?
 
