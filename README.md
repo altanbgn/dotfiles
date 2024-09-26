@@ -26,25 +26,13 @@
 If you install these dependencies, my dotfiles will work flawlessly (i hope)
 Even tho I don't remember every single one of them, I will try to keep this list up to date
 
-`noto-fonts`<br/>
-`noto-fonts-cjk`<br/>
-`noto-fonts-emoji`<br/>
-`noto-fonts-extra`<br/>
-`otf-font-awesome`<br/>
-`xclip`<br/>
-`brightnessctl`<br/>
-`polybar`<br/>
-`picom`<br/>
-`rofi`<br/>
-`feh`<br/>
+`noto-fonts`, `noto-fonts-cjk`, `noto-fonts-emoji`, `noto-fonts-extra`,
+`otf-font-awesome`, `xclip`, `brightnessctl`, `polybar`, `picom`, `rofi`,
+`feh`
 
 ## Developer Environment
 
-`alacritty`<br/>
-`tmux`<br/>
-`neovim`<br/>
-`zsh`<br/>
-`git`<br/>
+`alacritty`, `tmux`, `neovim`, `zsh`, `git`,
 
 ### Tmux
 
