@@ -1,6 +1,7 @@
 <h1 align="center">Personal dotfiles</h1>
 
-![arch setup](https://i.imgur.com/sXuSDVO.png)
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim![arch setup](https://i.imgur.com/sXuSDVO.png)
 
 ## How to use?
 
@@ -46,7 +47,7 @@ Even tho I don't remember every single one of them, I will try to keep this list
 `zsh`<br/>
 `git`<br/>
 
-## Tmux
+### Tmux
 
 For tmux, you need to install the plugin manager in order to load in the theme for absolute experience.
 
@@ -54,7 +55,7 @@ For tmux, you need to install the plugin manager in order to load in the theme f
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
-## Neovim
+### Neovim
 
 I know that packer unmaintained but I don't have time to fix it.
 I didn't encounter any error so far so I am using as it is.
