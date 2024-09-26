@@ -2,8 +2,8 @@
 -- ROSE-PINE
 -- =========
 require("rose-pine").setup({
-  variant = "moon",        -- auto, main, moon, or dawn
-  dark_variant = "moon",   -- main, moon, or dawn
+  variant = "main",        -- auto, main, moon, or dawn
+  dark_variant = "main",   -- main, moon, or dawn
   dim_inactive_windows = false,
   extend_background_behind_borders = true,
   enable = {
@@ -14,7 +14,7 @@ require("rose-pine").setup({
   styles = {
     bold = true,
     italic = true,
-    transparency = false,
+    transparency = true,
   },
 })
 
@@ -66,14 +66,14 @@ require('kanagawa').setup({
     transparent = false,         -- do not set background color
     dimInactive = false,         -- dim inactive window `:h hl-NormalNC`
     terminalColors = true,       -- define vim.g.terminal_color_{0,17}
-    theme = "dragon",              -- Load "wave" theme when 'background' option is not set
+    theme = "wave",              -- Load "wave" theme when 'background' option is not set
     background = {               -- map the value of 'background' option to a theme
         dark = "dragon",           -- try "dragon" !
         light = "lotus"
     },
 })
 
-vim.cmd.colorscheme("kanagawa")
+vim.cmd.colorscheme("rose-pine")
 
 -- vim.opt.background = "dark"
 -- vim.cmd.colorscheme("rose-pine")

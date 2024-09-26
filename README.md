@@ -26,25 +26,40 @@
 If you install these dependencies, my dotfiles will work flawlessly (i hope)
 Even tho I don't remember every single one of them, I will try to keep this list up to date
 
-For hyprland<br/>
-
-`rofi-wayland`<br/>
-`grim`<br/>
 `noto-fonts`<br/>
 `noto-fonts-cjk`<br/>
 `noto-fonts-emoji`<br/>
 `noto-fonts-extra`<br/>
 `otf-font-awesome`<br/>
-`swaylock-effects-git`<br/>
-`swaybg`<br/>
-`waybar`<br/>
-`wl-clipboard`<br/>
-`xorg-xwayland`<br/>
-
-For i3<br/>
-
+`xclip`<br/>
 `brightnessctl`<br/>
 `polybar`<br/>
 `picom`<br/>
 `rofi`<br/>
 `feh`<br/>
+
+## Developer Environment
+
+`alacritty`<br/>
+`tmux`<br/>
+`neovim`<br/>
+`zsh`<br/>
+`git`<br/>
+
+## Tmux
+
+For tmux, you need to install the plugin manager in order to load in the theme for absolute experience.
+
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+## Neovim
+
+I know that packer unmaintained but I don't have time to fix it.
+I didn't encounter any error so far so I am using as it is.
+
+```
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
