@@ -4,7 +4,7 @@
 require("rose-pine").setup({
   variant = "moon",        -- auto, main, moon, or dawn
   dark_variant = "moon",   -- main, moon, or dawn
-  dim_inactive_windows = true,
+  dim_inactive_windows = false,
   extend_background_behind_borders = true,
   enable = {
     terminal = true,
@@ -14,7 +14,7 @@ require("rose-pine").setup({
   styles = {
     bold = true,
     italic = true,
-    transparency = true,
+    transparency = false,
   },
 })
 
@@ -52,9 +52,30 @@ require("gruvbox").setup({
   transparent_mode = false,
 })
 
-vim.opt.background = "dark"
+-- ========
+-- Kanagawa
+-- ========
+require('kanagawa').setup({
+    compile = true,             -- enable compiling the colorscheme
+    undercurl = true,            -- enable undercurls
+    commentStyle = { italic = true },
+    functionStyle = {},
+    keywordStyle = { italic = true },
+    statementStyle = { bold = true },
+    typeStyle = {},
+    transparent = false,         -- do not set background color
+    dimInactive = false,         -- dim inactive window `:h hl-NormalNC`
+    terminalColors = true,       -- define vim.g.terminal_color_{0,17}
+    theme = "dragon",              -- Load "wave" theme when 'background' option is not set
+    background = {               -- map the value of 'background' option to a theme
+        dark = "dragon",           -- try "dragon" !
+        light = "lotus"
+    },
+})
 
-vim.cmd.colorscheme("gruvbox")
+vim.cmd.colorscheme("kanagawa")
+
+-- vim.opt.background = "dark"
 -- vim.cmd.colorscheme("rose-pine")
 
 -- vim.api.nvim_set_hl(0, "Normal", { ctermbg = 0 })

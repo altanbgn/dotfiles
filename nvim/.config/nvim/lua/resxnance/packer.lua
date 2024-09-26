@@ -44,6 +44,7 @@ return require("packer").startup(function(use)
     -- Colorscheme
     use({ "rose-pine/neovim", as = "rose-pine" })
     use("ellisonleao/gruvbox.nvim")
+    use("rebelot/kanagawa.nvim")
 
     -- Git
     use("tpope/vim-fugitive")
