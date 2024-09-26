@@ -18,8 +18,7 @@
     yay -S stow
     ```
 
-3. Uncomment the lines in [`install.sh`](./install.sh) of dotfiles you want to install
-4. Execute `./install.sh`.
+3. Execute `./install.sh`. (You can also uncomment the stow lines on the script to not install them)
 
 ## Dependencies
 
