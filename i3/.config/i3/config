@@ -2,7 +2,7 @@
 # config starts here: #
 #######################
 
-font pango:BlexMono Nerd Font Propo 9
+font pango:BlexMono Nerd Font Propo 10
 workspace_layout default
 # for_window [class="^.*"] border pixel 4
 
