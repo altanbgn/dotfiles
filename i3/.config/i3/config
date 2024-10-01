@@ -21,8 +21,8 @@ exec xrandr --output HDMI-A-0 --mode 1920x1080 --rate 239.96 --primary --left-of
 exec --no-startup-id picom --config $HOME/.config/picom.conf
 exec --no-startup-id /usr/bin/dunst
 
-exec --no-startup-id sleep 1 && feh --bg-fill $HOME/.wallpapers/default-wallpaper.png
-exec --no-startup-id sleep 2 && alacritty
+exec --no-startup-id sleep 1 && feh --bg-fill $HOME/.wallpapers/default-wallpaper.*
+exec --no-startup-id sleep 2 && kitty
 
 ######################################
 # keybindings for different actions: #
