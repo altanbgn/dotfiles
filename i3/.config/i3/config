@@ -16,7 +16,8 @@ set $refresh_i3status killall -SIGUSR1 i3status
 #############################################
 # autostart applications/services on login: #
 #############################################
-exec xrandr --output HDMI-A-0 --mode 1920x1080 --rate 239.96 --primary --left-of eDP-1
+exec xrandr --output HDMI-1 --mode 1920x1080 --rate 239.96 --primary --left-of eDP-1
+xrandr --output HDMI-1 --left-of eDP-1
 
 exec --no-startup-id picom --config $HOME/.config/picom.conf
 exec --no-startup-id /usr/bin/dunst
