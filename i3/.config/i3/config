@@ -2,7 +2,7 @@
 # config starts here: #
 #######################
 
-font pango:BlexMono Nerd Font Propo 10
+font pango:BlexMono Nerd Font Propo 9
 workspace_layout default
 # for_window [class="^.*"] border pixel 4
 
@@ -175,7 +175,7 @@ client.placeholder       $base     $base $text  $overlay   $overlay
 client.background        $base
 
 bar {
-    status_command i3status -c /etc/i3status.conf
+    status_command i3status
     colors {
         background $base
 
