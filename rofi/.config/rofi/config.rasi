@@ -1,9 +1,10 @@
 * {
   font: "BlexMono Nerd Font Mono 11";
 
-  bg: #141617;
+  bg: #191724;
   fgd: #e0def4;
-  primary: #285577;
+  fgd2: #21202e;
+  primary: #ebbcba;
 }
 
 configuration {
@@ -18,8 +19,8 @@ configuration {
 window {
   width: 500px;
   background-color: @bg;
-  border:           4px;
-  border-radius:    0;
+  border:           2px;
+  border-radius:    0px;
   border-color:     @primary;
   padding:          10px;
 }
@@ -58,7 +59,7 @@ element.normal.urgent {
 }
 element.normal.active {
   background-color: @primary;
-  text-color: @fgd;
+  text-color: @fgd2;
 }
 element.alternate.normal {
   background-color: transparent;
@@ -70,19 +71,19 @@ element.alternate.urgent {
 }
 element.alternate.active {
   background-color: transparent;
-  text-color: @fgd;
+  text-color: @fgd2;
 }
 element.selected.normal {
   background-color: @primary;
-  text-color:       @fgd;
+  text-color:       @fgd2;
 }
 element.selected.urgent {
   background-color: @primary;
-  text-color:       @fgd;
+  text-color:       @fgd2;
 }
 element.selected.active {
   background-color: @primary;
-  text-color:       @fgd;
+  text-color:       @fgd2;
 }
 
 entry {
