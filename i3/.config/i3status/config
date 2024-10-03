@@ -14,45 +14,45 @@ order += "disk /"
 order += "tztime local"
 
 volume master {
-  format = "VOL:%volume"
+    format = "VOL:%volume"
 }
 
 wireless wlan0 {
-  format_up = "W:[%quality|%essid|%bitrate] %ip"
-  format_down = "W:down"
+    format_up = "W:[%quality|%essid|%bitrate] %ip"
+        format_down = "W:down"
 }
 
 ethernet eth0 {
-  format_up = "E:[%speed] %ip"
-  format_down = "E:down"
+    format_up = "E:[%speed] %ip"
+        format_down = "E:down"
 }
 
 battery 0 {
-  format = "%status:%percentage %remaining %emptytime"
-  format_down = "No battery"
-  status_chr = "CHR"
-  status_bat = "BAT"
-  status_unk = "UNK"
-  status_full = "FUL"
-  path = "/sys/class/power_supply/BAT%d/uevent"
-  low_threshold = 10
+    format = "%status:%percentage %remaining %emptytime"
+        format_down = "No battery"
+        status_chr = "CHR"
+        status_bat = "BAT"
+        status_unk = "UNK"
+        status_full = "FUL"
+        path = "/sys/class/power_supply/BAT%d/uevent"
+        low_threshold = 10
 }
 
 cpu_temperature 0 {
-  format = "CPU:%degrees°C"
+    format = "CPU:%degrees°C"
 }
 
 memory {
-  format = "[MEM-USED]:%used"
-  threshold_degraded = "20%"
-  format_degraded = "[MEM-FREE]:%free"
+    format = "[MEM-USED]:%used"
+        threshold_degraded = "20%"
+        format_degraded = "[MEM-FREE]:%free"
 }
 
 disk "/" {
-  format = "DISK:%free"
+    format = "DISK:%free"
 }
 
 tztime local {
-  format = "%Y-%m-%d %H:%M:%S"
+    format = "%Y-%m-%d %H:%M:%S"
 }
 
