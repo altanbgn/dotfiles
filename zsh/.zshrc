@@ -45,3 +45,5 @@ export NVM_DIR="$HOME/.nvm"
 #java
 export JAVA_HOME=/usr/lib/jvm/default
 export JDTLS_JVM_ARGS="-javaagent:$HOME/.local/share/java/lombok.jar"
+
+export PATH=$PATH:/home/kadaj/.spicetify

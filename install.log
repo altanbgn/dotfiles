@@ -1,0 +1,9 @@
+[20:54:10 2024-10-04] FETCHING Version 2.38.4
+[20:54:10 2024-10-04] CREATING /home/kadaj/.spicetify
+[20:54:10 2024-10-04] DOWNLOADING https://github.com/spicetify/cli/releases/download/v2.38.4/spicetify-2.38.4-linux-amd64.tar.gz
+[20:54:17 2024-10-04] EXTRACTING /home/kadaj/.spicetify/spicetify.tar.gz
+[20:54:17 2024-10-04] SETTING EXECUTABLE PERMISSIONS TO /home/kadaj/.spicetify/spicetify
+[20:54:17 2024-10-04] REMOVING /home/kadaj/.spicetify/spicetify.tar.gz
+[20:54:17 2024-10-04] APPENDING /home/kadaj/.spicetify to PATH in /home/kadaj/.zshrc
+[20:54:17 2024-10-04] spicetify v2.38.4 was installed successfully to /home/kadaj/.spicetify
+[20:54:17 2024-10-04] Run 'spicetify --help' to get started
