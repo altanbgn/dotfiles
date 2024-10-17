@@ -1,12 +1,11 @@
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/home/kadaj/.zsh/completions:"* ]]; then export FPATH="/home/kadaj/.zsh/completions:$FPATH"; fi
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
 # =========================
 # Main path configurations
 # =========================
-export PATH="$PATH:$HOME/.scripts"
-export PATH="$PATH:$GOPATH/bin"
-
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
@@ -34,16 +33,27 @@ fi
 # =========================
 # Aliases
 # =========================
-#golang
-export GOPATH="$HOME/.go"
+export PATH=$PATH:$HOME/.scripts
+export PATH=$PATH:/home/kadaj/.spicetify
 
-#nvm
+# GOLANG
+export PATH=$PATH:$GOPATH/bin
+export GOPATH=$HOME/.go
+
+# NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-#java
+# Java
 export JAVA_HOME=/usr/lib/jvm/default
 export JDTLS_JVM_ARGS="-javaagent:$HOME/.local/share/java/lombok.jar"
 
-export PATH=$PATH:/home/kadaj/.spicetify
+# Deno
+. "/home/kadaj/.deno/env"
+# Initialize zsh completions (added by deno install script)
+autoload -Uz compinit
+compinit
+
+# Doom Emacs
+export PATH=$PATH:/.config/emacs/bin

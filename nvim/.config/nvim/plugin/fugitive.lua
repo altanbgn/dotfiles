@@ -1,8 +1,0 @@
-vim.keymap.set("n", "<leader>gs", vim.cmd.Git)
-vim.keymap.set("n", "<leader>ga", "<cmd>Git add .<CR>")
-vim.keymap.set("n", "<leader>gc", function() vim.cmd.Git("commit") end)
-vim.keymap.set("n", "<leader>gd", function() vim.cmd.Git("diff") end)
-vim.keymap.set("n", "<leader>gb", function() vim.cmd.Git("blame") end)
-vim.keymap.set("n", "<leader>gpl", function() vim.cmd.Git("pull") end)
-vim.keymap.set("n", "<leader>gps", function() vim.cmd.Git("push") end)
-vim.keymap.set("n", "<leader>gpo", function() vim.cmd.Git({ "push", "-u", "origin" }) end)
