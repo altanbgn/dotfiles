@@ -24,8 +24,11 @@ return {
                 },
                 mapping = cmp.mapping.preset.insert({
                     ["<C-Space>"] = cmp.mapping.complete(),
-                    ["<C-u>"] = cmp.mapping.scroll_docs(-4),
-                    ["<C-d>"] = cmp.mapping.scroll_docs(4),
+                    ["<CR>"] = cmp.mapping.confirm({ select = true }),
+                    ["<C-p>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Select }),
+                    ["<C-n>"] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Select }),
+                    ["<Tab>"] = nil,
+                    ["<S-Tab>"] = nil,
                 }),
                 snippet = {
                     expand = function(args)
@@ -67,7 +70,7 @@ return {
             vim.api.nvim_create_autocmd("LspAttach", {
                 desc = "LSP actions",
                 callback = function(event)
-                    local opts = { buffer = event.buf }
+                    local opts = { buffer = event.buf, remap = false }
 
                     vim.keymap.set("n", "K", "<cmd>lua vim.lsp.buf.hover()<cr>", opts)
                     vim.keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<cr>", opts)
