@@ -17,17 +17,17 @@ ______ _____ ___________ _____ _      _____ _____
 
 1. Clone this repository
 
-    ```bash
-    git clone https://github.com/altanbgn/dotfiles
-    cd dotfiles
-    ```
+```bash
+git clone https://github.com/altanbgn/dotfiles
+cd dotfiles
+```
 
 2. Install GNU Stow
 
-    ```bash
-    # I use arch btw
-    yay -S stow
-    ```
+```bash
+# I use arch btw
+ yay -S stow
+```
 
 3. Execute `./install.sh`. (You can also uncomment the stow lines on the script to not install them)
 

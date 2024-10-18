@@ -1,7 +1,7 @@
 local autocmd = vim.api.nvim_create_autocmd
 local augroup = vim.api.nvim_create_augroup
 
-local res0nanceGroup = augroup("res0nance", {})
+local resxnanceGroup = augroup("res0nance", {})
 local yankGroup = augroup("HighlightYank", {})
 local netrwGroup = augroup("NetrwCommands", { clear = true })
 
@@ -10,9 +10,16 @@ function R(name)
 end
 
 autocmd("BufWritePre", {
-  group = res0nanceGroup,
+  group = resxnanceGroup,
   pattern = "*",
   command = [[%s/\s\+$//e]],
+})
+
+autocmd("VimEnter", {
+  group = resxnanceGroup,
+  pattern = "*",
+  callback = function()
+  end,
 })
 
 autocmd("TextYankPost", {
@@ -23,13 +30,6 @@ autocmd("TextYankPost", {
       higroup = "IncSearch",
       timeout = 40,
     })
-  end,
-})
-
-autocmd("VimEnter", {
-  group = res0nanceGroup,
-  pattern = "*",
-  callback = function()
   end,
 })
 
