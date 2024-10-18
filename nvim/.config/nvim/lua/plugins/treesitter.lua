@@ -1,8 +1,6 @@
 return {
     "nvim-treesitter/nvim-treesitter",
-    dependencies = {
-        "nvim-treesitter/nvim-treesitter-context"
-    },
+    dependencies = { "nvim-treesitter/nvim-treesitter-context" },
     opts = {
         sync_install = false,
         auto_install = true,
@@ -46,6 +44,7 @@ return {
             "scala",
             "sql",
             "svelte",
+            "vue",
             "tmux",
             "toml",
             "tsx",

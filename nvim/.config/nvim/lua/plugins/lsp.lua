@@ -20,7 +20,7 @@ return {
 
             cmp.setup({
                 sources = {
-                    {name = "nvim_lsp"},
+                    { name = "nvim_lsp" },
                 },
                 mapping = cmp.mapping.preset.insert({
                     ["<C-Space>"] = cmp.mapping.complete(),
@@ -42,12 +42,12 @@ return {
     -- LSP
     {
         "neovim/nvim-lspconfig",
-        cmd = {"LspInfo", "LspInstall", "LspStart"},
-        event = {"BufReadPre", "BufNewFile"},
+        cmd = { "LspInfo", "LspInstall", "LspStart" },
+        event = { "BufReadPre", "BufNewFile" },
         dependencies = {
-            {"hrsh7th/cmp-nvim-lsp"},
-            {"williamboman/mason.nvim"},
-            {"williamboman/mason-lspconfig.nvim"},
+            { "hrsh7th/cmp-nvim-lsp" },
+            { "williamboman/mason.nvim" },
+            { "williamboman/mason-lspconfig.nvim" },
         },
         init = function()
             -- Reserve a space in the gutter
@@ -95,7 +95,7 @@ return {
                             on_init = function(client)
                                 if client.workspace_folders then
                                     local path = client.workspace_folders[1].name
-                                    if vim.uv.fs_stat(path..'/.luarc.json') or vim.uv.fs_stat(path..'/.luarc.jsonc') then
+                                    if vim.uv.fs_stat(path .. '/.luarc.json') or vim.uv.fs_stat(path .. '/.luarc.jsonc') then
                                         return
                                     end
                                 end
@@ -120,9 +120,7 @@ return {
                                     }
                                 })
                             end,
-                            settings = {
-                                Lua = {}
-                            }
+                            settings = { Lua = {} }
                         }
                     end,
                 }
