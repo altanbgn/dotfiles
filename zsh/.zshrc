@@ -1,4 +1,6 @@
 # Add deno completions to search path
+if [[ ":$FPATH:" != *":/home/resxnance/.zsh/completions:"* ]]; then export FPATH="/home/resxnance/.zsh/completions:$FPATH"; fi
+# Add deno completions to search path
 if [[ ":$FPATH:" != *":/home/kadaj/.zsh/completions:"* ]]; then export FPATH="/home/kadaj/.zsh/completions:$FPATH"; fi
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -50,10 +52,11 @@ export JAVA_HOME=/usr/lib/jvm/default
 export JDTLS_JVM_ARGS="-javaagent:$HOME/.local/share/java/lombok.jar"
 
 # Deno
-. "/home/kadaj/.deno/env"
+. "/home/resxnance/.deno/env"
 # Initialize zsh completions (added by deno install script)
 autoload -Uz compinit
 compinit
 
 # Doom Emacs
 export PATH=$PATH:/.config/emacs/bin
+
