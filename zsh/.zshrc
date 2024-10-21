@@ -5,9 +5,9 @@ if [[ ":$FPATH:" != *":/home/kadaj/.zsh/completions:"* ]]; then export FPATH="/h
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-# =========================
+# ========================
 # Main path configurations
-# =========================
+# ========================
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
@@ -32,9 +32,15 @@ if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
   tmux attach -t main || tmux new -s main
 fi
 
-# =========================
+# =======
 # Aliases
-# =========================
+# =======
+alias j11="sudo archlinux-java set java-11-openjdk"
+alias j17="sudo archlinux-java set java-17-openjdk"
+
+# =======
+# Exports
+# =======
 export PATH=$PATH:$HOME/.scripts
 export PATH=$PATH:/home/kadaj/.spicetify
 
@@ -59,4 +65,5 @@ compinit
 
 # Doom Emacs
 export PATH=$PATH:/.config/emacs/bin
+
 
