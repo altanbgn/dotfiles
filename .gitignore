@@ -1,7 +1,7 @@
 # Compiled Lua sources
 luac.out
 
-nvim/.config/nvim/plugin/packer_compiled.lua
+nvim/.config/nvim/lazy-lock.json
 
 # Fak accidental undodir commit lmao
 nvim/.config/nvim/undodir
