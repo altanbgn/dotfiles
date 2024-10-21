@@ -1,4 +1,6 @@
 vim.api.nvim_set_option_value("clipboard", "unnamedplus", {})
+-- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 
 vim.g.netrw_banner = 1
 vim.g.netrw_sizestyle = "H"

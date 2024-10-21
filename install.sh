@@ -17,7 +17,6 @@ stow --target "$HOME" --no-folding alacritty --adopt
 stow --target "$HOME" --no-folding dunst --adopt
 stow --target "$HOME" --no-folding git --adopt
 stow --target "$HOME" --no-folding i3 --adopt
-stow --target "$HOME" --no-folding kitty --adopt
 stow --target "$HOME" --no-folding nvim --adopt
 stow --target "$HOME" --no-folding rofi --adopt
 stow --target "$HOME" --no-folding tmux --adopt

@@ -2,7 +2,7 @@
 # config starts here: #
 #######################
 
-font pango:BlexMono Nerd Font Propo 9
+font pango:SauceCodePro Nerd Font Propo 9
 workspace_layout default
 # for_window [class="^.*"] border pixel 4
 
@@ -24,7 +24,7 @@ exec --no-startup-id picom --config $HOME/.config/picom.conf
 exec --no-startup-id /usr/bin/dunst
 
 exec --no-startup-id sleep 1 && feh --bg-fill $HOME/.wallpapers/default-wallpaper.*
-exec --no-startup-id sleep 2 && kitty
+exec --no-startup-id sleep 2 && alacritty
 
 ######################################
 # keybindings for different actions: #

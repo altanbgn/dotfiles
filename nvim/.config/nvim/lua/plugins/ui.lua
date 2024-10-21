@@ -1,11 +1,17 @@
 return {
     -- SMALL PKGS
-    { "lewis6991/gitsigns.nvim", opts = {} },
+    { "lewis6991/gitsigns.nvim",  opts = {} },
     { "folke/todo-comments.nvim", dependencies = { "nvim-lua/plenary.nvim" }, opts = {} },
     {
         "folke/zen-mode.nvim",
         keys = {
-            { "<leader>zz", "<cmd>ZenMode<cr>", desc = "Zen Mode" },
+            { "<leader>zz", "<cmd>ZenMode<cr>", desc = "Zen Mode" }
+        }
+    },
+    {
+        "norcalli/nvim-colorizer.lua",
+        keys = {
+            { "<leader>ct", "<cmd>ColorizerToggle<cr>", desc = "Toggle Colorizer" }
         }
     },
 
@@ -130,9 +136,18 @@ return {
     {
         "folke/noice.nvim",
         enabled = true,
+        dependencies = {
+            -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+            "MunifTanjim/nui.nvim",
+            -- OPTIONAL:
+            --   `nvim-notify` is only needed, if you want to use the notification view.
+            --   If not available, we use `mini` as the fallback
+            "rcarriga/nvim-notify",
+        },
         opts = function(_, opts)
             opts.debug = false
             opts.routes = opts.routes or {}
+
             table.insert(opts.routes, {
                 filter = {
                     event = "notify",
@@ -140,7 +155,9 @@ return {
                 },
                 opts = { skip = true },
             })
+
             local focused = true
+
             vim.api.nvim_create_autocmd("FocusGained", {
                 callback = function()
                     focused = true

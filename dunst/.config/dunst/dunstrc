@@ -8,7 +8,7 @@
     ### Geometry ###
     width = 400
     height = 300
-    origin = top-right
+    origin = top-center
     offset = 5x5
     scale = 0
 
@@ -37,7 +37,7 @@
     idle_threshold = 1
 
     ### Text ###
-    font = BlexMono Nerd Font Propo 9
+    font = SauceCodePro Nerd Font Propo 9
     line_height = 0
     markup = full
 
@@ -111,7 +111,7 @@
     highlight = "#31748f"
     frame_color = "#31748f"
     default_icon = "dialog-information"
-    timeout = 5
+    timeout = 3
     format = "<b><span foreground='#31748f'>%s</span></b>\n%b"
 
 [urgency_normal]
@@ -119,7 +119,7 @@
     highlight = "#ebbcba"
     frame_color = "#ebbcba"
     default_icon = "dialog-warning"
-    timeout = 5
+    timeout = 3
     format = "<b><span foreground='#ebbcba'>%s</span></b>\n%b"
 
 [urgency_critical]
@@ -127,5 +127,5 @@
     highlight = "#eb6f92"
     frame_color = "#eb6f92"
     default_icon = "dialog-error"
-    timeout = 60
+    timeout = 30
     format = "<b><span foreground='#eb6f92'>%s</span></b>\n%b"

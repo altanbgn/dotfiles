@@ -67,10 +67,9 @@ magenta = "#c4a7e7"
 cyan = "#ebbcba"
 white = "#e0def4"
 
-[cursor]
-style = "Block"
-blink_interval = 600
-unfocused_hollow = true
+[cursor.style]
+shape = "Block"
+blinking = "Never"
 
 [env]
 TERM = "xterm-256color"
@@ -94,22 +93,22 @@ history = 5000
 save_to_clipboard = true
 
 [font]
-size = 10
+size = 9
 
 [font.normal]
-family = "BlexMono Nerd Font Mono"
+family = "SauceCodePro Nerd Font Mono"
 style = "Medium"
 
 [font.bold]
-family = "BlexMono Nerd Font Mono"
+family = "SauceCodePro Nerd Font Mono"
 style = "Bold"
 
 [font.italic]
-family = "BlexMono Nerd Font Mono"
+family = "SauceCodePro Nerd Font Mono"
 style = "Italic"
 
 [font.bold_italic]
-family = "BlexMono Nerd Font Mono"
+family = "SauceCodePro Nerd Font Mono"
 style = "Bold Italic"
 
 [font.offset]
