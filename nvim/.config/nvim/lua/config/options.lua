@@ -1,4 +1,6 @@
 vim.api.nvim_set_option_value("clipboard", "unnamedplus", {})
+-- Code for removing background highlight
+--
 -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 

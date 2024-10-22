@@ -134,6 +134,21 @@ return {
     -- INTERFACES
     -- ==========
     {
+        "rcarriga/nvim-notify",
+        opts = {
+            icons = {
+                DEBUG = "[D]",
+                ERROR = "[E]",
+                INFO = "[I]",
+                TRACE = "[T]",
+                WARN = "[W]",
+            },
+            render = "compact",
+            stages = "fade",
+            timeout = 3000,
+        }
+    },
+    {
         "folke/noice.nvim",
         enabled = true,
         dependencies = {
@@ -141,8 +156,7 @@ return {
             "MunifTanjim/nui.nvim",
             -- OPTIONAL:
             --   `nvim-notify` is only needed, if you want to use the notification view.
-            --   If not available, we use `mini` as the fallback
-            "rcarriga/nvim-notify",
+            --   If not available, we use `mini` as the fallback - "echasnovski/mini.nvim",
         },
         opts = function(_, opts)
             opts.debug = false
@@ -194,6 +208,12 @@ return {
             return opts
         end,
     },
+    -- {
+    --     "rcarriga/nvim-notify",
+    --     opts = {
+    --
+    --     }
+    -- }
     -- ===========
     -- INDENTATION
     -- ===========
