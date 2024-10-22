@@ -76,7 +76,7 @@ TERM = "xterm-256color"
 
 [window]
 dynamic_padding = false
-opacity = 0.9
+opacity = 0.88
 
 [window.class]
 general = "Alacritty"
