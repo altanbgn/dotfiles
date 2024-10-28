@@ -77,5 +77,33 @@ return {
             { "<leader>qs", function() require("persistence").select() end,              desc = "Select session (Persistence)" },
             { "<leader>qd", function() require("persistence").stop() end,                desc = "Stop session (Persistence)" },
         }
+    },
+    {
+        "epwalsh/obsidian.nvim",
+        version = "*",
+        lazy = false,
+        ft = "markdown",
+        dependencies = { "nvim-lua/plenary.nvim" },
+        opts = {
+            workspaces = {
+                {
+                    name = "Personal",
+                    path = "~/Vaults/Personal",
+                },
+                {
+                    name = "Work",
+                    path = "~/Vaults/Work"
+                }
+            }
+        },
+        keys = {
+            { "<leader>on", "<cmd>ObsidianToday<cr>", desc = "Obsidian Today" },
+            { "<leader>ot", "<cmd>ObsidianTags<cr>", desc = "Obsidian Tags" },
+            { "<leader>oo", "<cmd>ObsidianOpen<cr>", desc = "Open in Obsidian" },
+            { "<leader>ow", "<cmd>ObsidianWorkspace<cr>", desc = "Obsidian Workspace" },
+            { "<leader>os", "<cmd>ObsidianSearch<cr>", desc = "Obsidian Search" },
+            { "<leader>od", "<cmd>ObsidianDailies<cr>", desc = "Obsidian Dailies" },
+            { "<leader>or", "<cmd>ObsidianRename<cr>", desc = "Obsidian Rename" },
+        }
     }
 }

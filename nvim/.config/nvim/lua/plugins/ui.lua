@@ -136,6 +136,7 @@ return {
     {
         "rcarriga/nvim-notify",
         opts = {
+            background_colour = "Normal",
             icons = {
                 DEBUG = "[D]",
                 ERROR = "[E]",
@@ -143,8 +144,8 @@ return {
                 TRACE = "[T]",
                 WARN = "[W]",
             },
-            render = "compact",
-            stages = "fade",
+            render = "minimal",
+            stages = "static",
             timeout = 3000,
         }
     },
@@ -205,15 +206,10 @@ return {
                     end)
                 end,
             })
+
             return opts
         end,
     },
-    -- {
-    --     "rcarriga/nvim-notify",
-    --     opts = {
-    --
-    --     }
-    -- }
     -- ===========
     -- INDENTATION
     -- ===========

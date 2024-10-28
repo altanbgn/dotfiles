@@ -71,6 +71,9 @@ white = "#e0def4"
 shape = "Block"
 blinking = "Never"
 
+[cursor]
+vi_mode_style = "Block"
+
 [env]
 TERM = "xterm-256color"
 
