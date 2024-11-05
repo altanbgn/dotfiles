@@ -4,6 +4,11 @@ return {
     { "folke/todo-comments.nvim", dependencies = { "nvim-lua/plenary.nvim" }, opts = {} },
     {
         "folke/zen-mode.nvim",
+        opts = {
+            window = {
+                width = 200
+            }
+        },
         keys = {
             { "<leader>zz", "<cmd>ZenMode<cr>", desc = "Zen Mode" }
         }

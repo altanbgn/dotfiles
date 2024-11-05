@@ -97,9 +97,10 @@ return {
             }
         },
         keys = {
-            { "<leader>on", "<cmd>ObsidianToday<cr>", desc = "Obsidian Today" },
+            { "<leader>on", "<cmd>ObsidianNew<cr>", desc = "Obsidian New" },
             { "<leader>ot", "<cmd>ObsidianTags<cr>", desc = "Obsidian Tags" },
             { "<leader>oo", "<cmd>ObsidianOpen<cr>", desc = "Open in Obsidian" },
+            { "<leader>of", "<cmd>ObsidianQuickSwitch<cr>", desc = "Obsidian Quick Switch" },
             { "<leader>ow", "<cmd>ObsidianWorkspace<cr>", desc = "Obsidian Workspace" },
             { "<leader>os", "<cmd>ObsidianSearch<cr>", desc = "Obsidian Search" },
             { "<leader>od", "<cmd>ObsidianDailies<cr>", desc = "Obsidian Dailies" },
