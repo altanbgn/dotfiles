@@ -2,7 +2,7 @@
 # config starts here: #
 #######################
 
-font pango:SauceCodePro Nerd Font Propo 9
+font pango:BlexMono Nerd Font Mono 9
 workspace_layout default
 # for_window [class="^.*"] border pixel 4
 
@@ -187,18 +187,4 @@ bar {
         urgent_workspace   $love     $base    $text
     }
 }
-
-# bar {
-#     status_command i3status -c /etc/i3status.conf
-#     colors {
-#         background $base
-#         statusline  #that neon blue
-#         separator #666666
-#
-#         focused_workspace  $rose $base $text
-#         active_workspace   #333333 #5f676a #ffffff
-#         inactive_workspace #333333 #222222 #888888
-#         urgent_workspace   #2f343a #900000 #ffffff
-#     }
-# }
 
