@@ -150,41 +150,32 @@ bindsym $mod+r mode "resize"
 # Color scheme: #
 #################
 # set primary Rosé Pine colorscheme colors
-set $base           #191724
-set $surface        #1f1d2e
-set $overlay        #26233a
-set $muted          #6e6a86
-set $subtle         #908caa
-set $text           #e0def4
-set $love           #eb6f92
-set $gold           #f6c177
-set $rose           #ebbcba
-set $pine           #31748f
-set $foam           #9ccfd8
-set $iris           #c4a7e7
-set $highlightlow   #21202e
-set $highlightmed   #403d52
-set $highlighthigh  #524f67
+set $dragonBlack #181616
+set $fujiWhite #dcd7ba
+set $oniViolet #957FB8
+
+set $dragonRed #c4746e
+set $dragonYellow #c4b28a
 
 # Teming border and Windows --------------
-# target                 title     bg    text   indicator  border
-client.focused           $rose     $base $text  $rose      $rose
-client.focused_inactive  $text     $base $text  $subtle    $surface
-client.unfocused         $text     $base $text  $overlay   $overlay
-client.urgent            $text     $base $text  $love      $love
-client.placeholder       $base     $base $text  $overlay   $overlay
-client.background        $base
+# target                 title          bg            text        indicator     border
+client.focused           $dragonYellow  $dragonBlack $fujiWhite  $dragonYellow $dragonYellow
+client.focused_inactive  $dragonBlack  $dragonBlack $fujiWhite  $dragonBlack $dragonBlack
+client.unfocused         $dragonBlack  $dragonBlack $fujiWhite  $dragonBlack $dragonBlack
+client.urgent            $oniViolet     $dragonBlack $fujiWhite  $dragonRed    $dragonRed
+client.placeholder       $dragonBlack  $dragonBlack $fujiWhite  $dragonBlack $dragonBlack
+client.background        $dragonBlack
 
 bar {
     status_command i3status
     colors {
-        background $base
+        background $dragonBlack
 
-        #target            border    bg       text
-        focused_workspace  $rose     $base    $text
-        active_workspace   $surface  $base    $text
-        inactive_workspace $overlay  $base    $text
-        urgent_workspace   $love     $base    $text
+        #target            border            bg               text
+        focused_workspace  $dragonYellow     $dragonBlack    $fujiWhite
+        active_workspace   $dragonYellow     $dragonBlack    $fujiWhite
+        inactive_workspace $dragonBlack     $dragonBlack    $fujiWhite
+        urgent_workspace   $dragonRed        $dragonBlack    $oniViolet
     }
 }
 

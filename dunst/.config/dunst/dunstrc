@@ -29,7 +29,7 @@
 
     padding = 10
     horizontal_padding = 10
-    frame_width = 1
+    frame_width = 2
     gap_size = 3
 
     separator_color = auto
@@ -107,25 +107,22 @@
     per_monitor_dpi = false
 
 [urgency_low]
-    background = "#26273d"
-    highlight = "#31748f"
-    frame_color = "#31748f"
+    background = "#181616"
+    frame_color = "#8ea4a2"
     default_icon = "dialog-information"
     timeout = 3
-    format = "<b><span foreground='#31748f'>%s</span></b>\n%b"
+    # format = "<b><span foreground='#8ea4a2'>%s</span></b>\n%b"
 
 [urgency_normal]
-    background = "#362e3c"
-    highlight = "#ebbcba"
-    frame_color = "#ebbcba"
+    background = "#181616"
+    frame_color = "#c4b28a"
     default_icon = "dialog-warning"
     timeout = 3
-    format = "<b><span foreground='#ebbcba'>%s</span></b>\n%b"
+    format = "<b><span foreground='#dcd7ba'>%s</span></b>\n%b"
 
 [urgency_critical]
-    background = "#35263d"
-    highlight = "#eb6f92"
-    frame_color = "#eb6f92"
+    background = "#181616"
+    frame_color = "#c4746e"
     default_icon = "dialog-error"
     timeout = 30
-    format = "<b><span foreground='#eb6f92'>%s</span></b>\n%b"
+    format = "<b><span foreground='#c4746e'>%s</span></b>\n%b"

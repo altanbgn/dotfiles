@@ -1,10 +1,10 @@
 * {
   font: "BlexMono Nerd Font Mono 11";
 
-  bg: #191724;
-  fgd: #e0def4;
-  fgd2: #21202e;
-  primary: #ebbcba;
+  bg: #181616;
+  fgd: #dcd7ba;
+  fgd2: #0d0c0c;
+  primary: #a99c8b;
 }
 
 configuration {
