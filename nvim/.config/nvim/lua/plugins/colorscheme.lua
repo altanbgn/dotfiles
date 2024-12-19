@@ -25,7 +25,7 @@ return {
         "rebelot/kanagawa.nvim",
         name = "kanagawa",
         opts = {
-            compile = false,   -- enable compiling the colorscheme
+            compile = false,  -- enable compiling the colorscheme
             undercurl = true, -- enable undercurls
             commentStyle = { italic = true },
             functionStyle = {},

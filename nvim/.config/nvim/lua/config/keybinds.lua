@@ -8,7 +8,7 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 -- greatest remap ever (Paste something without copying the selected visual)
-vim.keymap.set("x", "p", [["_dP]], { desc = "Paste without copying"})
+vim.keymap.set("x", "p", [["_dP]], { desc = "Paste without copying" })
 
 -- next greatest remap ever: asbjornHaland
 vim.keymap.set("n", "<leader>Y", [["+Y]], { desc = "Copy line" })
@@ -17,7 +17,7 @@ vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]], { desc = "Cut" })
 
 vim.keymap.set("n", "Q", "<nop>")
 
-vim.keymap.set("n", "<leader>fn", vim.cmd.enew, { desc = "New file"})
+vim.keymap.set("n", "<leader>fn", vim.cmd.enew, { desc = "New file" })
 vim.keymap.set("n", "<leader>fe", vim.cmd.Ex, { desc = "File Explorer" })
 vim.keymap.set("n", "<leader>fx", "<cmd>!chmod +x %<cr>", { desc = "File Permission (chmod +x)", silent = true })
 vim.keymap.set("n", "<leader>fc", "<cmd>e ~/.config/nvim<cr>", { desc = "Lazy config", silent = true })
