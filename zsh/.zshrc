@@ -4,7 +4,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # Main path configurations
 # ========================
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="af-magic"
 
 DISABLE_AUTO_TITLE="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
@@ -39,9 +39,12 @@ alias j17="sudo archlinux-java set java-17-openjdk"
 export PATH=$PATH:$HOME/.scripts
 export PATH=$PATH:/home/kadaj/.spicetify
 
+# Cargo
+export PATH=$PATH:$HOME/.cargo/bin
+
 # GOLANG
-export PATH=$PATH:$GOPATH/bin
 export GOPATH=$HOME/.go
+export PATH=$PATH:$GOPATH/bin
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
@@ -63,7 +66,6 @@ if [[ ":$FPATH:" != *":/home/kadaj/.zsh/completions:"* ]]; then export FPATH="/h
 # Initialize zsh completions (added by deno install script)
 autoload -Uz compinit
 compinit
-
 
 # Doom Emacs
 export PATH=$PATH:/.config/emacs/bin
