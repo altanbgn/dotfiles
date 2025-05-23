@@ -7,8 +7,17 @@ return {
     },
     {
         "williamboman/mason.nvim",
-        lazy = false,
-        opts = {},
+        config = function()
+            require("mason").setup()
+        end
+    },
+    {
+        "williamboman/mason-lspconfig.nvim",
+        config = function()
+            require("mason-lspconfig").setup({
+                ensure_installed = { "lua_ls", "tsserver", "jdtls" }
+            })
+        end
     },
 
     -- Autocompletion
@@ -41,13 +50,27 @@ return {
 
     -- LSP
     {
+        "jay-babu/mason-nvim-dap.nvim",
+        config = function()
+            -- ensure the java debug adapter is installed
+            require("mason-nvim-dap").setup({
+                ensure_installed = { "java-debug-adapter", "java-test" }
+            })
+        end
+    },
+    -- utility plugin for configuring the java language server for us
+    {
+        "mfussenegger/nvim-jdtls",
+        dependencies = {
+            "mfussenegger/nvim-dap",
+        }
+    },
+    {
         "neovim/nvim-lspconfig",
         cmd = { "LspInfo", "LspInstall", "LspStart" },
         event = { "BufReadPre", "BufNewFile" },
         dependencies = {
             { "hrsh7th/cmp-nvim-lsp" },
-            { "williamboman/mason.nvim" },
-            { "williamboman/mason-lspconfig.nvim" },
         },
         init = function()
             -- Reserve a space in the gutter
@@ -127,5 +150,5 @@ return {
                 }
             })
         end
-    }
+    },
 }

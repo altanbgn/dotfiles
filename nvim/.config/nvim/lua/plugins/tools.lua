@@ -1,5 +1,11 @@
 return {
     {
+        "Exafunction/codeium.vim",
+        keys = {
+            { "<leader>cot", "<cmd>CodeiumToggle", desc = "Toggle Codeium" }
+        }
+    },
+    {
         "tpope/vim-fugitive",
         keys = {
             { "<leader>ga",  "<cmd>Git add .<cr>",          desc = "Git add . (Fugitive)" },

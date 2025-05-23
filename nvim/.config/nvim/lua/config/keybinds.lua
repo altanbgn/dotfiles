@@ -10,11 +10,6 @@ vim.keymap.set("n", "N", "Nzzzv")
 -- greatest remap ever (Paste something without copying the selected visual)
 vim.keymap.set("x", "p", [["_dP]], { desc = "Paste without copying" })
 
--- next greatest remap ever: asbjornHaland
-vim.keymap.set("n", "<leader>Y", [["+Y]], { desc = "Copy line" })
-vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]], { desc = "Copy" })
-vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]], { desc = "Cut" })
-
 vim.keymap.set("n", "Q", "<nop>")
 
 vim.keymap.set("n", "<leader>fn", vim.cmd.enew, { desc = "New file" })
