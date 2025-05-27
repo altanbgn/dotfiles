@@ -4,19 +4,10 @@ local augroup = vim.api.nvim_create_augroup
 local resxnanceGroup = augroup("resxnance", {})
 local yankGroup = augroup("HighlightYank", {})
 local netrwGroup = augroup("NetrwCommands", { clear = true })
-local javaGroup = augroup('java_cmds', { clear = true })
 
 function R(name)
     require("plenary.reload").reload_module(name)
 end
-
-autocmd("FileType", {
-    group = javaGroup,
-    pattern = {'java'},
-    callback = function()
-        require("config.jdtls").setup_jdtls()
-    end
-})
 
 autocmd("BufWritePre", {
     group = resxnanceGroup,

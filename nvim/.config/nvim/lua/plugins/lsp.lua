@@ -5,20 +5,6 @@ return {
         lazy = true,
         config = false,
     },
-    {
-        "williamboman/mason.nvim",
-        config = function()
-            require("mason").setup()
-        end
-    },
-    {
-        "williamboman/mason-lspconfig.nvim",
-        config = function()
-            require("mason-lspconfig").setup({
-                ensure_installed = { "lua_ls", "tsserver", "jdtls" }
-            })
-        end
-    },
 
     -- Autocompletion
     {
@@ -50,22 +36,6 @@ return {
 
     -- LSP
     {
-        "jay-babu/mason-nvim-dap.nvim",
-        config = function()
-            -- ensure the java debug adapter is installed
-            require("mason-nvim-dap").setup({
-                ensure_installed = { "java-debug-adapter", "java-test" }
-            })
-        end
-    },
-    -- utility plugin for configuring the java language server for us
-    {
-        "mfussenegger/nvim-jdtls",
-        dependencies = {
-            "mfussenegger/nvim-dap",
-        }
-    },
-    {
         "neovim/nvim-lspconfig",
         cmd = { "LspInfo", "LspInstall", "LspStart" },
         event = { "BufReadPre", "BufNewFile" },
@@ -77,6 +47,11 @@ return {
             -- This will avoid an annoying layout shift in the screen
             vim.opt.signcolumn = "yes"
         end,
+        opts = {
+            servers = {
+                jdtls = { skip_setup = true }
+            }
+        },
         config = function()
             local lsp_defaults = require("lspconfig").util.default_config
 
@@ -104,7 +79,19 @@ return {
                     vim.keymap.set("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<cr>", opts)
                 end,
             })
+        end
+    },
 
+    -- Mason
+    {
+        "williamboman/mason.nvim",
+        config = function()
+            require("mason").setup()
+        end
+    },
+    {
+        "williamboman/mason-lspconfig.nvim",
+        config = function()
             require("mason-lspconfig").setup({
                 ensure_installed = {},
                 handlers = {

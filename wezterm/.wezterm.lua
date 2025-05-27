@@ -7,11 +7,14 @@ config.font = wezterm.font {
     weight = 'Medium',
     harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' },
 }
-config.font_size = 6.5
+config.font_size = 8.5
 
+config.colors = {
+    background = "black"
+}
 config.color_scheme = 'GruvboxDarkHard'
 
-config.window_background_opacity = 0.8
+config.window_background_opacity = 0.7
 config.enable_tab_bar = false
 config.use_fancy_tab_bar = false
 
