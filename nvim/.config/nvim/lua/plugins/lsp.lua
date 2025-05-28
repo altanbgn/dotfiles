@@ -47,11 +47,6 @@ return {
             -- This will avoid an annoying layout shift in the screen
             vim.opt.signcolumn = "yes"
         end,
-        opts = {
-            servers = {
-                jdtls = { skip_setup = true }
-            }
-        },
         config = function()
             local lsp_defaults = require("lspconfig").util.default_config
 
@@ -137,5 +132,5 @@ return {
                 }
             })
         end
-    },
+    }
 }
