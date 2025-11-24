@@ -6,7 +6,7 @@ font pango:BlexMono Nerd Font Mono 9
 workspace_layout default
 # for_window [class="^.*"] border pixel 4
 
-exec xautolock -time 3 -locker "i3lock --nofork -c 191724"
+exec xautolock -time 1 -locker "i3lock --nofork -c 191724"
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id nm-applet
 
@@ -24,7 +24,7 @@ exec --no-startup-id picom --config $HOME/.config/picom.conf
 exec --no-startup-id /usr/bin/dunst
 
 exec --no-startup-id sleep 1 && feh --bg-fill $HOME/.wallpapers/default-wallpaper.*
-exec --no-startup-id sleep 2 && wezterm
+exec --no-startup-id sleep 2 && alacritty
 
 ######################################
 # keybindings for different actions: #
@@ -177,7 +177,7 @@ client.background        $base
 
 bar {
     status_command i3status
-    position top
+    position bottom
     colors {
         background $base
 
