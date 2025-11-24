@@ -1,7 +1,7 @@
 return {
   {
     "folke/lazydev.nvim",
-    ft = "lua",     -- only load on lua files
+    ft = "lua", -- only load on lua files
     opts = {
       library = {
         -- See the configuration section for more details
@@ -16,28 +16,7 @@ return {
     lazy = true,
     config = false,
   },
-  {
-    "Exafunction/windsurf.nvim",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "hrsh7th/nvim-cmp",
-    },
-    config = function()
-      require("codeium").setup({
-        enable_cmp_source = true,
-        virtual_text = {
-          key_bindings = {
-            accept = "<Tab>",
-            accept_word = false,
-            accept_line = false,
-            clear = false,
-            next = "<M-]>",
-            prev = "<M-[>",
-          },
-        }
-      })
-    end
-  },
+  { "github/copilot.vim" },
 
   -- Autocompletion
   { 'onsails/lspkind.nvim' },
@@ -50,7 +29,6 @@ return {
       cmp.setup({
         sources = {
           { name = "nvim_lsp" },
-          { name = "codeium" }
         },
         formatting = {
           format = require('lspkind').cmp_format({
